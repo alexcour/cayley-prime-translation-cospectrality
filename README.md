@@ -1,6 +1,6 @@
 # Cospectrality of a structured three-element support under prime cyclic translation
 
-**Review status: PUBLIC REVIEW / 0.1.x. Current package: 0.1.2-review (2026-10-06). This is an unstable review snapshot, not a stable scientific release.**
+**Review status: PUBLIC REVIEW / 0.1.x. Current package: 0.1.3-review (2026-10-06). This is an unstable review snapshot, not a stable scientific release.**
 
 This repository is prepared for public external review and for a dated, inspectable record of the current work on the structured support-translation family
 
@@ -69,6 +69,16 @@ This `0.1.x` review series is intentionally unstable. Reviewers should cite a co
 Alexandre Couret, independent researcher, France.
 ORCID: 0009-0000-8246-7146.
 
-## License status
+## Licensing
 
-Public review access does not by itself create or expand a reuse license. The intended final policy remains MIT for code and CC BY 4.0 for manuscript/text, subject to explicit approval before any stable release or archival deposit.
+Original project code and GitHub configuration: MIT. Original manuscript, proof texts,
+documentation, examples and research data: CC BY 4.0. See LICENSE.md and LICENSES/MIT.txt.
+The author approved these grants on 5 October 2026. Third-party rights remain with their holders.
+
+## Editorial preparation on 6 October 2026
+
+This 0.1.3-review candidate derives from the Drive archive named 0.1.2, whose internal
+VERSION is 0.1.2-review. The proof files, scripts, examples and manuscript are unchanged.
+The delta restores the author-approved license policy, aligns the version, and adds
+review intake and a build check. GitHub review is allowed; stable release, Zenodo, HAL
+and arXiv remain deferred. No repository, tag, release or DOI is created by this package.

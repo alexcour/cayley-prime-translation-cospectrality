@@ -1,3 +1,7 @@
+# Historical staging report
+
+The text below describes an earlier preparation state. The current review decision is in docs/RELEASE_GATE.md and PUBLICATION_STATUS.md; licenses are in LICENSE.md. This report is retained for provenance.
+
 # Public-review staging build report
 
 Build date: 2026-10-06

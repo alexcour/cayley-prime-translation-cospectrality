@@ -7,7 +7,7 @@ authors:
     given-names: Alexandre
     orcid: "https://orcid.org/0009-0000-8246-7146"
     affiliation: "Independent researcher, France"
-version: "0.1.2-review"
+version: "0.1.3-review"
 keywords:
   - Cayley digraphs
   - cospectrality

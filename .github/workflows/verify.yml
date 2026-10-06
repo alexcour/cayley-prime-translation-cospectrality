@@ -22,3 +22,16 @@ jobs:
           python3 -m json.tool reproducibility/results/pge5_416_review_new.json >/dev/null
       - name: Check manifest
         run: sha256sum -c SHA256SUMS.txt
+
+  manuscript-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install LaTeX
+        run: sudo apt-get update && sudo apt-get install -y texlive-latex-base texlive-latex-recommended texlive-fonts-recommended lmodern
+      - name: Build manuscript
+        working-directory: manuscript
+        run: |
+          mkdir -p /tmp/cayley-pdf
+          pdflatex -interaction=nonstopmode -halt-on-error -output-directory=/tmp/cayley-pdf structured_cayley.tex
+          pdflatex -interaction=nonstopmode -halt-on-error -output-directory=/tmp/cayley-pdf structured_cayley.tex

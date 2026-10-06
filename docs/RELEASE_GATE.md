@@ -20,7 +20,7 @@ A `0.1.x` GitHub repository/tag may be public when all of the following remain t
 - Confirm by independent review that the synchronized 10C3 wording (`3∣|H|` and the chord-lemma coincidence clause) leaves every downstream argument valid.
 - Obtain an independent human mathematical review of 10A6 and 10C3.
 - Complete the targeted primary-source antecedence checks listed in `PRIOR_ART.md`.
-- Confirm final authorship, affiliation wording, licenses, funding/conflict statements, and contact information.
+- Authorship, independent affiliation, ORCID and original-contribution licenses are confirmed for the review series by the author. Document funding/conflict statements and final archival citation details before a later stable/archival step.
 - Pass clean-checkout reproducibility and manuscript build checks from the exact stable candidate.
 - Review all public metadata again for claim-boundary compliance.
 

@@ -1,0 +1,52 @@
+{
+  "name": "Reproducibility report",
+  "description": "Report an actual clean-checkout run or mismatch.",
+  "body": [
+    {
+      "type": "markdown",
+      "attributes": {
+        "value": "Working preprint: independent review and priority assessment are open. Precise partial feedback is welcome."
+      }
+    },
+    {
+      "type": "input",
+      "id": "version",
+      "attributes": {
+        "label": "Version and full commit SHA"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "scope",
+      "attributes": {
+        "label": "Environment and exact command"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "evidence",
+      "attributes": {
+        "label": "Output, mismatch and how to reproduce it"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "limits",
+      "attributes": {
+        "label": "Checked scope and remaining reservations"
+      },
+      "validations": {
+        "required": false
+      }
+    }
+  ]
+}

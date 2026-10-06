@@ -1,7 +1,7 @@
 # Publication status
 
 Status date: 2026-10-06
-Version: 0.1.2-review
+Version: 0.1.3-review
 Review channel: PUBLIC REVIEW / 0.1.x
 Stable scientific release: NO-GO
 

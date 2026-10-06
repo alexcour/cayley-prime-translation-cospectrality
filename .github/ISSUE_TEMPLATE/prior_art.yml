@@ -1,0 +1,52 @@
+{
+  "name": "Prior-art reference",
+  "description": "Compare an earlier primary-source result with the stated family.",
+  "body": [
+    {
+      "type": "markdown",
+      "attributes": {
+        "value": "Working preprint: independent review and priority assessment are open. Precise partial feedback is welcome."
+      }
+    },
+    {
+      "type": "input",
+      "id": "version",
+      "attributes": {
+        "label": "Version and full commit SHA"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "scope",
+      "attributes": {
+        "label": "Full reference, DOI or source URL, theorem and page"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "evidence",
+      "attributes": {
+        "label": "Map the hypotheses and conclusions; explain overlap or difference"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "limits",
+      "attributes": {
+        "label": "Checked scope and remaining reservations"
+      },
+      "validations": {
+        "required": false
+      }
+    }
+  ]
+}

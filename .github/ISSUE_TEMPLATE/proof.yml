@@ -1,0 +1,52 @@
+{
+  "name": "Proof objection or review",
+  "description": "Identify an argument checked or a precise mathematical objection.",
+  "body": [
+    {
+      "type": "markdown",
+      "attributes": {
+        "value": "Working preprint: independent review and priority assessment are open. Precise partial feedback is welcome."
+      }
+    },
+    {
+      "type": "input",
+      "id": "version",
+      "attributes": {
+        "label": "Version and full commit SHA"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "scope",
+      "attributes": {
+        "label": "Statement or lemma and hypotheses"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "evidence",
+      "attributes": {
+        "label": "Argument, missing step or counterexample"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "limits",
+      "attributes": {
+        "label": "Checked scope and remaining reservations"
+      },
+      "validations": {
+        "required": false
+      }
+    }
+  ]
+}
