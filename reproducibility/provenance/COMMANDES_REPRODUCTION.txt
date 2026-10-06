@@ -1,0 +1,54 @@
+INVENTAIRE MINIMAL DE REPRODUCTION 10A6 ET 10C3
+Date 4 octobre 2026. Python 3.12.14. Bibliothèque standard seulement.
+
+Tous les fichiers dont le nom contient review_new sont des sorties NOUVELLES.
+reproduce_available_sources.py est un NOUVEAU pilote, pas mixed_cp_scan_v2.py,
+mixed_general_scan.py ni audit_exact.py. Il réutilise l'encodeur cyclotomique
+archivé de check_cp_translation.py et ne constitue pas une seconde implémentation
+indépendante de cet encodeur. verify_lattice_independent.py est le vérificateur
+archivé du 3 octobre; son en-tête indique lui-même qu'il fut un nouveau vérificateur.
+
+Depuis le répertoire de ce dossier décompressé, commandes exécutées dans cette
+recherche avec les mêmes octets de sources et les mêmes arguments :
+
+python3 sources/verify_lattice_independent.py --p 3 --bound 120 --output nouvelles_executions/p3_120_review_new.json
+python3 reproduce_available_sources.py --source sources/check_cp_translation.py --mode mixed --output nouvelles_executions/mixed_review_new.json
+python3 reproduce_available_sources.py --source sources/check_cp_translation.py --mode 416 --output nouvelles_executions/pge5_416_review_new.json
+
+La première exporte les 11 853 réseaux HNF et les différences de traces exactes.
+Résultat sans 3-torsion : 6 948 testés, 165 cospectraux, tous C3_AB, aucun h.
+Résultat avec 3-torsion : 4 905 testés, 2 503 cospectraux, tous h.
+Le test C3_AB est le test archivé de signe commun et d'échange des coordonnées;
+son lien avec beta est le lien documentaire exposé dans le paquet de relecture.
+
+La deuxième exporte 4 674 couples générateurs distincts, 1 414 cospectraux,
+1 414 satisfaisant h sur le sous-groupe engendré et zéro divergence.
+Les groupes et les dix populations sont fixés explicitement dans le nouveau pilote.
+
+La troisième parcourt les cinq lignes de la section 14 de l'audit canonique :
+p=5 K=C10,C15,C20,C25; p=7 K=C14. Tous les couples distincts sont inclus,
+même non générateurs. Elle exporte 416 bijections et vérifie chaque arc.
+L'ordre des sommets est lexicographique sur K, dernière coordonnée C_p la plus rapide.
+Chaque certificat conserve les valeurs de h sur H=<kappa,kappa_prime>.
+La bijection est prolongée par classes de K/H, sans supposer h sur K.
+
+Commande disponible dans le pack publication, non relancée dans cette recherche :
+python3 sources/publication_verify_exact.py --bounds 3:120,5:30,7:20,11:12 --output nouvelles_executions/publication_summary_review_new.json
+Elle contrôle les multisets cyclotomiques et neuf exemples matriciels, mais
+n'exporte pas toutes les lignes individuelles. Le JSON livré sous sources est
+la copie du résultat préexistant, et non une sortie produite par cette commande ici.
+
+Commandes HNF supplémentaires déjà proposées par le paquet, non exécutées ici :
+python3 sources/verify_lattice_independent.py --p 5 --bound 60 --output nouvelles_executions/p5_60_review_new.json
+python3 sources/verify_lattice_independent.py --p 7 --bound 56 --output nouvelles_executions/p7_56_review_new.json
+Leurs populations HNF ne sont ni les dix populations mixtes, ni les 416 paramètres.
+
+Vérification d'identité des fichiers, sur un système disposant de sha256sum :
+sha256sum -c SHA256SUMS.txt
+Avant une nouvelle exécution, conserver les anciennes sorties et changer le nom
+ou le dossier de sortie. Une variation de version Python doit être consignée.
+
+Restent à récupérer : octets des trois scripts mixtes originaux, stdout/stderr,
+commandes et environnement d'origine; sortie individuelle p=3 à 120 originale;
+audit_exact.py et son extraction originale des 416 cas et certificats.
+Aucun statut E ou N n'est modifié par ce dossier.

@@ -1,0 +1,24 @@
+name: verify
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  exact-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run exact publication checks
+        run: python3 reproducibility/verify_exact.py --output /tmp/results_local.json
+      - name: Validate JSON syntax
+        run: |
+          python3 -m json.tool reproducibility/results/results.json >/dev/null
+          python3 -m json.tool reproducibility/results/mixed_review_new.json >/dev/null
+          python3 -m json.tool reproducibility/results/p3_120_review_new.json >/dev/null
+          python3 -m json.tool reproducibility/results/pge5_416_review_new.json >/dev/null
+      - name: Check manifest
+        run: sha256sum -c SHA256SUMS.txt

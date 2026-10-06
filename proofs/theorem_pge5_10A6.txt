@@ -1,0 +1,269 @@
+﻿THÉORÈME POST-AUDIT — CLASSIFICATION GÉNÉRALE p≥5 POUR T↔T+
+État : 4 octobre 2026
+
+
+IMPORTANT
+Ce document est postérieur à l’audit canonique du 3 octobre.
+Il traite précisément le point que cet audit laissait conjectural.
+Il ne réactive pas l’ancienne note 01A par autorité : la preuve est réécrite ci-dessous en isolant explicitement les étapes nécessaires.
+
+
+STATUT
+E — PROUVÉ par l’argument ci-dessous.
+N — NON AUDITÉE.
+Q — dépendance externe primaire vérifiée : Poonen–Rubinstein, Table 1 et Théorème 3 ; relecture indépendante recommandée compte tenu du changement de statut.
+
+
+1. Théorème
+
+
+Soit p≥5 premier, H un groupe abélien fini engendré par deux éléments distincts κ,κ′, et c un générateur de C_p.
+Posons
+T={(κ,0),(κ,c),(κ′,0)},
+T^+=T+(0,c).
+
+
+Alors sont équivalents :
+(i) Cay(H×C_p,T) et Cay(H×C_p,T^+) sont cospectraux ;
+(ii) il existe h:H→F_p tel que h(κ′)=1 et h(κ)∈{1,2} ;
+(iii) un automorphisme explicite de H×C_p envoie T sur T^+.
+
+
+Ainsi, pour cette famille précise et tout p≥5 :
+cospectralité ⇔ critère h ⇔ isomorphisme.
+
+
+2. Suffisance
+
+
+Déjà prouvée :
+si h(κ)=1,
+φ_+(x,y)=(x,y+h(x));
+si h(κ)=2,
+φ_-(x,y)=(x,h(x)-y).
+Dans les deux cas φ(T)=T^+.
+
+
+3. Donnée duale
+
+
+Pour ψ∈H^, posons
+u=ψ(κ), v=ψ(κ′).
+Soit
+Γ={(u,v):ψ∈H^}.
+Comme H^ est un groupe, Γ est un sous-groupe du tore des racines de l’unité.
+
+
+Pour une phase z∈μ_p :
+λ_T=u(1+z)+v,
+λ_T+=u(z+z²)+vz.
+
+
+4. Première valeur forcée
+
+
+Fixons z primitive p-ième.
+Le caractère trivial de H donne dans Spec(T) :
+2+z.
+
+
+Par cospectralité, il existe (u,v)∈Γ et z′∈μ_p tels que
+z′u+z′²u+z′v=2+z.
+
+
+Posons
+A=z′u, B=z′²u, C=z′v.
+Alors
+A+B+C+(-1)+(-1)+(-z)=0.
+
+
+Il s’agit d’une relation de poids 6 entre racines de l’unité.
+
+
+5. Classification des relations de poids 6
+
+
+Poonen–Rubinstein définissent les relations avec coefficients entiers positifs et prouvent que toute relation se décompose en relations minimales.
+Leur Table 1, complète par le Théorème 3 jusqu’au poids 12, donne aux poids ≤6 :
+R2, R3, R5 et le seul type minimal de poids 6, (R5:R3).
+
+
+Le représentant explicite de (R5:R3) possède six racines distinctes.
+Notre relation possède deux occurrences de -1 ; elle n’est donc pas minimale.
+
+
+Une décomposition de poids 6 ne peut alors être que :
+3R2
+ou
+2R3.
+Il n’existe aucune relation minimale de poids 1 ou 4, et R5 laisserait un poids 1 impossible.
+
+
+Le cas 2R3 est impossible :
+les deux occurrences de -1 doivent appartenir à deux R3 distinctes ; -z appartient à l’une d’elles. Dans un R3, le quotient de deux termes distincts est une racine cubique primitive. On aurait donc z∈μ3, contradiction avec p≥5.
+
+
+Il reste 3R2.
+Aucun des trois termes négatifs -1,-1,-z ne peut s’apparier à un autre terme négatif ; chaque R2 l’apparie donc à son opposé positif.
+Ainsi
+{A,B,C}={1,1,z}.
+
+
+6. Les trois branches
+
+
+Comme B=z′A, il existe exactement trois placements.
+
+
+Branche D — diagonale :
+A=1, B=z, C=1.
+Alors
+z′=z,
+u=z^{-1},
+v=z^{-1}.
+Donc
+(z^{-1},z^{-1})∈Γ.
+
+
+Branche R — réflexion :
+A=z, B=1, C=1.
+Alors
+z′=z^{-1},
+u=z²,
+v=z.
+Donc
+(z²,z)∈Γ.
+
+
+Branche P — parasite :
+A=B=1, C=z.
+Alors
+z′=1,
+u=1,
+v=z.
+Donc
+(1,z)∈Γ.
+
+
+Les deux premières branches donnent immédiatement le critère h.
+Il reste à éliminer P comme troisième mécanisme.
+
+
+7. Seconde valeur dans la branche parasite
+
+
+Supposons (1,z)∈Γ.
+Avec cette paire et la phase extérieure z, T possède la valeur
+1+2z.
+
+
+La cospectralité impose une écriture côté T^+ :
+A+B+C=1+2z,
+donc
+A+B+C+(-1)+(-z)+(-z)=0.
+
+
+Même analyse :
+la répétition de -z exclut le type minimal (R5:R3).
+Le cas 2R3 est impossible, car les deux -z sont dans deux R3 distinctes et -1 appartient à l’un d’eux ; le quotient z ou z^{-1} serait cubique.
+Donc la relation est 3R2 et
+{A,B,C}={1,z,z}.
+
+
+Les trois placements donnent :
+
+
+(a) A=z, B=z, C=1 :
+z′=1, donc (u,v)=(z,1).
+
+
+(b) A=z, B=1, C=z :
+z′=z^{-1}, donc (u,v)=(z²,z²).
+
+
+(c) A=1, B=z, C=z :
+z′=z, donc (u,v)=(z^{-1},1).
+
+
+8. Fermeture dans Γ
+
+
+On dispose déjà de (1,z)∈Γ.
+
+
+Dans le cas (a) :
+(z,1)(1,z)=(z,z), et une puissance donne (z^{-1},z^{-1}).
+
+
+Dans le cas (b) :
+(z²,z²) engendre le même sous-groupe diagonal que (z,z), car 2 est inversible modulo p ; une puissance donne (z^{-1},z^{-1}).
+
+
+Dans le cas (c) :
+une puissance de (z^{-1},1) donne (z²,1), puis
+(z²,1)(1,z)=(z²,z).
+
+
+Ainsi la branche parasite force toujours l’une des deux branches D ou R.
+
+
+9. Passage de Γ au morphisme h
+
+
+Si (z^{-1},z^{-1})∈Γ, il existe ψ∈H^ avec
+ψ(κ)=ψ(κ′)=z^{-1}.
+
+
+Comme κ,κ′ engendrent H, l’image entière ψ(H) est engendrée par z^{-1}; elle est donc contenue dans μ_p.
+Écrivons ψ(x)=z^{h0(x)} avec h0:H→F_p.
+Alors h0(κ)=h0(κ′)=-1.
+En remplaçant h0 par -h0 :
+h(κ)=h(κ′)=1.
+
+
+Si (z²,z)∈Γ, le même raisonnement donne directement
+h(κ)=2,
+h(κ′)=1.
+
+
+Le critère h est donc nécessaire.
+
+
+10. Conclusion
+
+
+Pour tout groupe abélien fini H=<κ,κ′> et tout p≥5 :
+cospectralité ⇔ critère h ⇔ isomorphisme.
+
+
+Aucune hypothèse sur la p-partie de H, son rang, son exposant ou sa partie première à p n’est nécessaire.
+
+
+11. Compatibilité avec les résultats antérieurs
+
+
+• Si p∤|H|, Hom(H,F_p)=0 : on retrouve immédiatement le no-go cyclotomique.
+• Si H est p-primaire cyclique : on retrouve 10A1.
+• Si H est p-primaire de rang 2 : le critère h est automatique, comme en 10A2.
+• Dans les 4 674 couples mixtes testés exactement : les 1 414 cospectralités sont exactement les cas h, conformément au théorème.
+• Les 416 cospectralités p≥5 de l’audit fini sont toutes isomorphes, conformément au théorème.
+
+
+12. Dépendance externe
+
+
+Bjorn Poonen & Michael Rubinstein,
+“The Number of Intersection Points Made by the Diagonals of a Regular Polygon”,
+SIAM J. Discrete Math. 11 (1998), 133–156.
+Section 3 :
+relations à coefficients positifs, décomposition en minimales, Table 1 et Théorème 3.
+Au poids 6, le seul type minimal est (R5:R3), dont la relation explicite comporte six termes distincts.
+
+
+13. Portée
+
+
+Le théorème concerne uniquement la famille structurée T↔T^+ ci-dessus.
+Il ne classifie pas toutes les cospectralités de Cayley de valence 3.
+Il ne prouve aucune nouveauté.
+Il ne concerne pas p=3, où l’élimination de 2R3 échoue précisément.

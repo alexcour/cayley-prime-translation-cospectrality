@@ -1,0 +1,286 @@
+﻿AUDIT D’ANTÉRIORITÉ CIBLÉ — 10A6 · 10C3 · 10B1 — 2026-10-04
+
+
+Objet
+Réconcilier les audits d’antériorité présents dans Drive avec l’état mathématique post-audit du 4 octobre 2026, sans confondre vérité mathématique (E), nouveauté/priorité (N) et qualité documentaire (Q).
+
+
+Doctrine
+E = ce qui est démontré et dans quel périmètre.
+N = état de l’antériorité bibliographique.
+Q = qualité des témoins, reproductibilité, disponibilité des sources et relecture.
+Une preuve de E ne démontre pas N. Une recherche bibliographique négative ne démontre pas la nouveauté.
+
+
+1. DOCUMENTS DRIVE RÉCONCILIÉS
+
+
+Documents contrôlés :
+• 00A — AUDIT SCIENTIFIQUE CANONIQUE — CAYLEY · C3 · Cp — 2026-10-03.
+• 00B — ÉNONCÉS CANONIQUES — CAYLEY · C3 · Cp — 2026-10-04.
+• 01 — FEUILLE DE ROUTE SCIENTIFIQUE ACTIVE — CAYLEY · C3 · Cp — 2026-10-04.
+• 02 — JOURNAL DES STATUTS & CORRECTIONS — CAYLEY — 2026-10-04.
+• 10D — CHANTIER ANTÉRIORITÉ — positionnement bibliographique ciblé.
+• 10A6 — THÉORÈME POST-AUDIT — classification générale p≥5 pour T↔T+ — 2026-10-04.
+• 10C3 — THÉORÈME — classification complète p=3 pour T↔T+ — 2026-10-04.
+• 10B1 — THÉORÈME — injectivité μ↦spectre dans la famille cyclique — 2026-10-04.
+• Manuscrit_Cayley_10A6_10C3_EN_v0_1.pdf.
+• Guide_publication_Frederic_v0_1.docx.
+
+
+Constat documentaire important :
+10D1 existait nominalement dans Drive mais était vide. Le présent texte le remplit et devient la synthèse de réconciliation d’antériorité ; il ne remplace pas les sources primaires ni une relecture bibliographique indépendante.
+
+
+2. VERDICT EXÉCUTIF
+
+
+A. Antériorité établie
+1) Cas C12.
+Le cas cyclique à douze sommets n’est pas nouveau. Une paire équivalente apparaît chez Julia Brown, et une formulation équivalente apparaît également chez Katja Mönius. Toute revendication de nouveauté pour ce cas doit être retirée.
+
+
+2) Sous-famille infinie de Brown.
+Brown recouvre une sous-famille infinie de la construction cyclique :
+k = 2^r, r≥2, μ = 1 + 2^{r-1}.
+Ainsi l’antériorité ne se limite pas au seul cas C12.
+
+
+B. Résultats mathématiques fermés dans le Drive actuel mais nouveauté non établie
+3) Classification p≥5 — 10A6.
+État Drive actuel :
+cospectralité ⇔ existence de h:H→F_p avec h(κ′)=1 et h(κ)∈{1,2} ⇔ isomorphisme explicite,
+pour la famille structurée T={(κ,0),(κ,1),(κ′,0)}, T+=T+(0,1), et H=<κ,κ′> abélien fini.
+Statut : E=PROUVÉ selon 10A6 ; N=NON AUDITÉE ; Q=preuve autonome, dépendance Poonen–Rubinstein explicitée, relecture indépendante recommandée.
+La ligne plus ancienne de 00A qui laissait la nécessité générale ouverte est historiquement correcte au 3 octobre, mais superseded par 10A6 le 4 octobre.
+
+
+4) Classification p=3 — 10C3.
+État Drive actuel :
+• si 3∤|H| : cospectralité ⇔ β(Γ)=Γ, β(u,v)=(-v,-u) ;
+• si 3||H| : cospectralité ⇔ critère h ⇔ isomorphisme explicite.
+Statut : E=PROUVÉ selon 10C3 ; N=NON AUDITÉE ; Q=preuve autonome, relecture indépendante recommandée.
+
+
+5) Injectivité μ↦Spec(T_μ) — 10B1.
+Pour k pair, 3∤k, μ∈U(k)[2]\{1}, l’application μ↦Spec(T_μ) est démontrée injective dans 10B1.
+Conséquence interne :
+le nombre de classes spectrales distinctes produites par cette famille vaut exactement |U(k)[2]|−1.
+Statut : E=PROUVÉ selon 10B1 ; N=NON AUDITÉE ; Q=preuve autonome et contrôles computationnels antérieurs.
+
+
+C. Résultats dont l’antériorité exacte n’est pas établie
+6) Famille C_m×C6.
+Pour m pair,
+A_m={(1,0),(1,1),(1,3)},
+B_m={(1,1),(1,2),(1,4)}.
+Le Drive établit :
+cospectralité pour tout m pair ;
+isomorphisme ⇔ 3|m.
+Les cas I et II du corpus U(210) sont les instances m=2 et m=4.
+Statut d’antériorité : aucune antériorité exacte établie dans le Drive ; ne pas écrire “nouveau” tant que Meng 1998 et les autres sources ciblées ne sont pas lus.
+
+
+7) Exceptions non cycliques I et II.
+Le non-isomorphisme et la non-circularité sont prouvés dans le dossier par invariants intrinsèques.
+La priorité bibliographique de ces paires précises n’est pas établie.
+
+
+8) Critère h.
+La construction par cisaillement/réflexion est mathématiquement établie dans le dossier.
+La question bibliographique distincte est : ce critère apparaît-il déjà, sous une formulation équivalente, dans la littérature CI/DCI, sur les digraphes de Cayley ou les translations de supports ?
+Statut N : non établi.
+
+
+9) Mécanisme β.
+Le mécanisme β(u,v)=(-v,-u) est mathématiquement intégré à la classification p=3.
+Aucune antériorité exacte de cette formulation générale sur Γ n’est établie dans le Drive.
+Brown fournit néanmoins une sous-famille cyclique appartenant au phénomène général ; cela interdit toute revendication trop large.
+
+
+10) Invariant local Ψ_3 / Ψ_ℓ.
+Il sépare les collisions finies du corpus et constitue un témoin combinatoire explicite.
+Sa nouveauté comme invariant, ou l’existence d’un analogue standard, reste à auditer.
+
+
+3. RÉFÉRENCES DÉJÀ IDENTIFIÉES ET PORTÉE
+
+
+Brown
+Antériorise le cas C12 et une sous-famille infinie de la famille cyclique. Elle n’est pas, à ce stade, identifiée comme une classification générale de la famille T↔T+ sur un groupe abélien H arbitraire.
+
+
+Mönius
+La thèse 2021 contient une paire équivalente au cas C12 et traite des questions spectrales/arithmetic des circulants. La version article 2020 doit être contrôlée séparément ; l’identité de portée entre l’article et la thèse ne doit pas être supposée.
+
+
+Mans–Pappalardi–Shparlinski
+Travaux pertinents pour la propriété spectrale d’Ádám et la rigidité spectrale des circulants. Ils constituent un contexte théorique important, mais aucune correspondance exacte avec 10A6/10C3/C_m×C6 n’est établie dans le dossier actuel.
+
+
+Poonen–Rubinstein
+Dépendance de preuve sur les petites relations nulles de racines de l’unité. Leur résultat ne doit pas être présenté comme antériorisant la classification Cayley elle-même.
+
+
+Lam–Leung
+Contexte général sur les sommes nulles de racines de l’unité. À citer comme théorie de fond lorsque pertinent.
+
+
+Toida / Dobson–Morris
+Le théorème CI pour les circulants unitaires sert à la preuve du non-isomorphisme dans le secteur cyclique. Il constitue un outil antérieur, pas à lui seul une antériorité de la famille cospectrale construite.
+
+
+Kovács–Šinkovec
+Contexte DCI pour les groupes cycliques de valence trois. La portée doit être distinguée du cas particulier de la famille T_μ.
+
+
+4. SOURCES PRIORITAIRES ENCORE À OBTENIR OU À LIRE INTÉGRALEMENT
+
+
+Priorité 1
+J. Meng, “Non-isomorphic cospectral Cayley digraphs”, Graph Theory Notes of New York 35 (1998), 51–53.
+Pourquoi : titre et objet extrêmement proches du cœur du dossier ; lecture intégrale indispensable avant toute revendication de priorité sur C_m×C6, I/II ou la classification structurée.
+
+
+Priorité 2
+Huang–Chang (2001), source signalée dans le Guide de publication.
+À vérifier : énoncé exact, type de spectre, portée circulante ou abélienne, valence, nature des supports et critères nécessaires/suffisants.
+
+
+Priorité 3
+Mönius (2020), version article.
+À distinguer de la thèse 2021 déjà contrôlée.
+
+
+Priorité 4
+Rechercher les formulations équivalentes au critère h dans :
+• Cayley digraph isomorphisms ;
+• CI/DCI ;
+• affine or triangular automorphisms ;
+• support translations in H×C_p ;
+• spectral Ádám-type results.
+
+
+Priorité 5
+Rechercher les formulations équivalentes à β(Γ)=Γ dans :
+• character-value subgroup symmetries ;
+• ternary/cubic spectral sector swapping ;
+• cospectral Cayley digraphs over products with C3.
+
+
+5. TABLE DE STATUT CANONIQUE PROPOSÉE
+
+
+Cas C12
+E : établi.
+N : ANTÉRIEUR.
+Q : correspondance Brown/Mönius documentée.
+
+
+Sous-famille Brown k=2^r, μ=1+2^{r-1}
+E : établie comme sous-famille de la construction.
+N : ANTÉRIEURE.
+Q : correspondance algébrique documentée.
+
+
+Famille cyclique complète T_μ
+E : cospectralité et non-isomorphisme établis ; injectivité μ établie par 10B1.
+N : PARTIELLEMENT ANTÉRIEURE ; généralité complète non auditée.
+Q : preuve + contrôles exacts.
+
+
+10A6, p≥5
+E : PROUVÉ selon le témoin 10A6.
+N : NON AUDITÉE.
+Q : preuve autonome ; dépendance Poonen–Rubinstein ; relecture indépendante recommandée.
+
+
+10C3, p=3
+E : PROUVÉ selon le témoin 10C3.
+N : NON AUDITÉE.
+Q : preuve autonome ; relecture indépendante recommandée.
+
+
+10B1, injectivité μ
+E : PROUVÉ selon le témoin 10B1.
+N : NON AUDITÉE.
+Q : preuve autonome ; contrôle computationnel antérieur.
+
+
+Famille C_m×C6
+E : PROUVÉE.
+N : AUCUNE ANTÉRIORITÉ EXACTE ÉTABLIE À CE JOUR ; MENG 1998 À LIRE.
+Q : preuve autonome archivée.
+
+
+Exceptions I et II
+E : non-isomorphisme/non-circularité PROUVÉS dans le dossier.
+N : NON ÉTABLIE.
+Q : invariants explicites et certificat fini.
+
+
+Critère h
+E : intégré aux théorèmes actuels.
+N : NON ÉTABLIE.
+Q : construction explicite.
+
+
+Mécanisme β
+E : intégré aux théorèmes actuels.
+N : NON ÉTABLIE.
+Q : preuve autonome.
+
+
+Ψ_3 / Ψ_ℓ
+E : invariant valide dans le périmètre utilisé.
+N : NON AUDITÉE.
+Q : témoin combinatoire explicite.
+
+
+6. FORMULATIONS DE PUBLICATION ADMISSIBLES À CE STADE
+
+
+Admissible :
+“We classify the prescribed support-translation family T↔T+ under the hypotheses stated below. Known circulant examples are recovered as special cases. A complete assessment of priority for the general classification is still in progress.”
+
+
+Admissible :
+“The twelve-vertex circulant example is not new; it is equivalent to previously published examples of Brown and Mönius.”
+
+
+Admissible :
+“Brown’s construction overlaps with an infinite subfamily of the cyclic specialization.”
+
+
+À éviter tant que l’audit n’est pas fermé :
+“This is the first classification…”
+“This family is new.”
+“No previous work contains this criterion.”
+“These are the first noncyclic examples.”
+“The invariant Ψ_3 is new.”
+
+
+7. POINT DE DÉCISION POUR LA SOUMISSION
+
+
+Avant toute revendication de nouveauté forte :
+1. obtenir et lire Meng 1998 ;
+2. obtenir Huang–Chang 2001 ;
+3. vérifier l’article Mönius 2020 ;
+4. mettre à jour cette note avec une correspondance exacte claim par claim ;
+5. faire relire 10A6 et 10C3 par un mathématicien indépendant ;
+6. conserver séparément E, N et Q dans le manuscrit et les métadonnées de soumission.
+
+
+Conclusion
+Le corpus actuel justifie un positionnement scientifique plus précis qu’au 3 octobre :
+• l’antériorité du cas C12 et d’une sous-famille cyclique infinie est établie ;
+• les résultats post-audit 10A6, 10C3 et 10B1 ferment mathématiquement des chantiers internes mais ne ferment pas la question de priorité ;
+• C_m×C6, le critère h, le mécanisme β, I/II et Ψ_3 restent des cibles d’audit bibliographique ;
+• la source la plus urgente à lire est Meng 1998.
+
+
+Statut de cette note
+E : synthèse documentaire, pas preuve nouvelle.
+N : sans objet.
+Q : réconciliation Drive au 4 octobre 2026 ; à réviser après lecture des sources prioritaires.

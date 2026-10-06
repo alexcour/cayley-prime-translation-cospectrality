@@ -1,0 +1,98 @@
+[
+  {
+    "path": "COMMANDES_REPRODUCTION.txt",
+    "bytes": 3699,
+    "sha256": "3590548ab1d2ae468ec06ce2f96b44fa08a30d0f4ccac59a29985fa720c9eb3f",
+    "origin": "see report and provenance"
+  },
+  {
+    "path": "INVENTAIRE_ORIGINAUX.csv",
+    "bytes": 877,
+    "sha256": "54a49a57ac8929466cab598d2bd9cfcba72b40226ac1e442e10a9b8682da870e",
+    "origin": "see report and provenance"
+  },
+  {
+    "path": "Inventaire_reproductibilite_10A6_10C3.docx",
+    "bytes": 44321,
+    "sha256": "c279bea8548c4f26fcc704ab8ecdc15180c1547106d34ae8ed800730784b2645",
+    "origin": "see report and provenance"
+  },
+  {
+    "path": "nouvelles_executions/mixed_review_new.json",
+    "bytes": 1229538,
+    "sha256": "17d4c82e797dd7354397d9441ccd6227ed0ff7a524c4898479ebe92bf7e37ec6",
+    "origin": "NEW execution"
+  },
+  {
+    "path": "nouvelles_executions/p3_120_review_new.json",
+    "bytes": 5442010,
+    "sha256": "046b74ff9040e2e2a328f33e9605b7d3c074b0334a38c8653acbd7e8d647145e",
+    "origin": "NEW execution"
+  },
+  {
+    "path": "nouvelles_executions/pge5_416_review_new.json",
+    "bytes": 1967178,
+    "sha256": "fbccfe5f13d09a42916d5ef23ec26a70b54974c25b7c070bbefe402fc9f01f15",
+    "origin": "NEW execution"
+  },
+  {
+    "path": "provenance/10A4_SOURCE_extracted_text.txt",
+    "bytes": 2260,
+    "sha256": "94d0ba2dc56d1515a03d291d461978495ec782c298f69f0e786a24620cb51cbc",
+    "origin": "see report and provenance"
+  },
+  {
+    "path": "provenance/GITHUB_REFS_INSPECTED.json",
+    "bytes": 2612,
+    "sha256": "e7b958be1e415bc8f9b3e4750d587c2e8201f72f2baf93e9af9296f7c0734f2a",
+    "origin": "see report and provenance"
+  },
+  {
+    "path": "provenance/VALIDATION_NOUVELLES_EXECUTIONS.json",
+    "bytes": 1192,
+    "sha256": "45a634f59500f6c7b166d2aa9b2ab9fc1b157a8bad1da54d8c471ec6f2f61c9b",
+    "origin": "see report and provenance"
+  },
+  {
+    "path": "provenance/search_evidence.json",
+    "bytes": 508655,
+    "sha256": "2e1cd175a45a8e9b0850664a4b8212ffbaa80addb284cc56f398787a185e3199",
+    "origin": "see report and provenance"
+  },
+  {
+    "path": "reproduce_available_sources.py",
+    "bytes": 4858,
+    "sha256": "2f905d7223456051731f24302388c131829ca484100544ad4ad4bfe2f0c3684b",
+    "origin": "see report and provenance"
+  },
+  {
+    "path": "sources/check_cp_translation.py",
+    "bytes": 14589,
+    "sha256": "70d5aee642490a892067e5b513234b1ce852004fa9960b8b6954bbc8157f0540",
+    "origin": "see report and provenance"
+  },
+  {
+    "path": "sources/lattice_p3_72_independent_results.json",
+    "bytes": 1949799,
+    "sha256": "4c52c2db46dae5c1485bf8702013eeaaf17b3ec556e6395200c957955ef119f4",
+    "origin": "see report and provenance"
+  },
+  {
+    "path": "sources/publication_results.json",
+    "bytes": 3018,
+    "sha256": "924c22261ef19b57233e190d274ed9ee006522bfdc71d6acec533866dfd15b9a",
+    "origin": "see report and provenance"
+  },
+  {
+    "path": "sources/publication_verify_exact.py",
+    "bytes": 7482,
+    "sha256": "6dfa464ebd3f54fdb25cc8ae1a6515e2a6644ba4c27fae838aeef333bb132d5c",
+    "origin": "see report and provenance"
+  },
+  {
+    "path": "sources/verify_lattice_independent.py",
+    "bytes": 4515,
+    "sha256": "ed5ddcab6ae8f6b6bc36fa499780eea6e4300c0768029b4fa375bc10b738afd6",
+    "origin": "see report and provenance"
+  }
+]

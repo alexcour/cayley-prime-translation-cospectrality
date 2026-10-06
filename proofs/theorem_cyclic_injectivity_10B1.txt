@@ -1,0 +1,401 @@
+﻿THÉORÈME — INJECTIVITÉ μ↦SPECTRE DANS LA FAMILLE CYCLIQUE
+État : 4 octobre 2026
+
+
+STATUT
+E — PROUVÉ par l’argument autonome ci-dessous.
+N — NON AUDITÉE.
+Q — preuve autonome ; vérification computationnelle antérieure inject.py : 83 valeurs de k≤400, zéro collision.
+
+
+1. Cadre
+
+
+Soit k pair, 3∤k.
+Pour μ∈U(k)[2]\{1}, dans C_k×C_3 posons
+T_μ={(1,0),(1,1),(μ,0)}.
+
+
+On sait déjà que T_μ et T_μ^+=T_μ+(0,1) sont cospectraux et non isomorphes pour tout μ admissible.
+
+
+Le présent théorème affirme :
+
+
+μ≠ν
+⇒
+Spec(T_μ)≠Spec(T_ν).
+
+
+Ainsi l’application
+μ ↦ classe spectrale de T_μ
+est injective sur U(k)[2]\{1}.
+
+
+2. Forme des valeurs propres
+
+
+Soit x une racine k-ième de l’unité et ω une racine cubique primitive.
+Les trois valeurs propres associées à x sont
+
+
+λ_0=x^μ+2x,
+λ_1=x^μ-ω²x,
+λ_2=x^μ-ωx.
+
+
+Posons
+y=x^{μ-1}.
+
+
+Alors
+
+
+λ_0=x(2+y),
+λ_1=x(y-ω²),
+λ_2=x(y-ω).
+
+
+3. Premier invariant spectral : d=gcd(k,μ-1)
+
+
+Pour j=1,2 :
+|λ_j|≤2.
+
+
+Pour j=0 :
+|λ_0|=|2+y|≤3,
+avec égalité si et seulement si y=1.
+
+
+Le nombre d’autovaleurs de module 3 est donc exactement
+d_μ=gcd(k,μ-1),
+car le noyau de x↦x^{μ-1} sur μ_k possède d_μ éléments.
+
+
+Ainsi le spectre détermine d_μ.
+
+
+4. Ce que d_μ détermine parmi les involutions
+
+
+Écrivons
+k=2^e m,
+m impair.
+
+
+Sur chaque puissance première impaire ℓ^a divisant m, une involution est ±1.
+Le facteur ℓ^a divise d_μ exactement lorsque μ≡1 mod ℓ^a.
+Donc d_μ détermine toutes les composantes impaires de μ.
+
+
+Pour la composante 2-adique :
+
+
+• e=1 : une seule involution ;
+• e=2 : d_μ distingue 1 et -1 ;
+• e≥3 : les quatre involutions sont
+1,
+-1,
+1+2^{e-1},
+-1+2^{e-1}.
+
+
+Les valuations 2-adiques de d_μ sont respectivement
+e,
+1,
+e-1,
+1.
+
+
+La seule ambiguïté possible pour un même d est donc entre
+-1
+et
+-1+2^{e-1}
+sur la composante 2-adique.
+
+
+Globalement, si μ≠ν mais d_μ=d_ν, alors nécessairement
+8|k
+et
+ν≡μ+k/2 mod k.
+
+
+Il suffit de distinguer cette paire résiduelle.
+
+
+5. Mise en place du cas ambigu
+
+
+Posons
+d=d_μ=d_ν,
+q=k/d.
+
+
+Dans le cas ambigu :
+4|q.
+
+
+Écrivons
+μ-1=da,
+avec gcd(a,q)=1.
+Alors
+ν-1=d(a+q/2).
+
+
+Soit ζ une racine primitive q-ième.
+L’image de x↦x^{μ-1} sur μ_k est exactement μ_q.
+
+
+Les valeurs de module 3 correspondent à y=1.
+Parmi les autres valeurs de λ_0, le plus grand module est obtenu exactement pour
+y=ζ
+ou
+y=ζ^{-1}.
+
+
+Ce module vaut
+M=|2+ζ|>2.
+
+
+Comme les secteurs λ_1,λ_2 ont module ≤2, le spectre complet identifie intrinsèquement le multiensemble E_μ des autovaleurs de module M.
+
+
+6. Structure de E_μ
+
+
+Soit ξ primitive k-ième et choisissons r tel que
+ar≡1 mod q.
+
+
+Alors
+x=ξ^r
+satisfait
+x^{μ-1}=ζ.
+
+
+Le noyau de x↦x^{μ-1} est le sous-groupe K_d=μ_d.
+En posant
+C=x(2+ζ),
+on obtient
+
+
+E_μ
+=
+C K_d
+⊎
+conj(C) K_d
+
+
+comme multiensemble de deux cosets multiplicatifs.
+
+
+Pour ν, comme q est divisible par 4 et a,r sont impairs,
+
+
+(a+q/2)(r+q/2)≡1 mod q.
+
+
+Posons
+τ=ξ^{q/2}.
+
+
+Alors un antécédent de ζ pour ν est τx, et
+
+
+E_ν
+=
+τ C K_d
+⊎
+τ conj(C) K_d.
+
+
+De plus
+τ^d=-1,
+donc
+τ∉K_d.
+
+
+7. Les deux multisets ne peuvent pas coïncider
+
+
+Supposons
+E_μ=E_ν.
+
+
+Comme τ∉K_d, le coset τ C K_d est distinct de C K_d.
+
+
+Si C K_d=conj(C) K_d, alors E_μ est deux fois le même coset, tandis que E_ν est deux fois un coset distinct : impossible.
+
+
+Sinon l’égalité des deux unions de cosets force
+τ C K_d=conj(C) K_d.
+
+
+Donc
+τ C/conj(C)∈K_d.
+
+
+En élevant à la puissance d :
+
+
+τ^d (C/conj(C))^d=1,
+
+
+donc
+
+
+(C/conj(C))^d=-1.
+
+
+Or
+x^d=ζ^r.
+Si
+
+
+R=(2+ζ)/(2+ζ^{-1}),
+
+
+alors
+
+
+(C/conj(C))^d
+=
+ζ^{2r} R^d.
+
+
+Ainsi
+R^d
+=
+-ζ^{-2r},
+
+
+qui est une racine de l’unité.
+
+
+Il s’ensuit que R est lui-même une racine de l’unité.
+
+
+8. Contradiction géométrique
+
+
+Comme q est divisible par 4, toutes les racines de l’unité contenues dans Q(ζ) sont des q-ièmes racines.
+
+
+Écrivons
+θ=2π/q,
+ζ=e^{iθ},
+et
+φ=arg(2+e^{iθ}).
+
+
+On a
+0<φ<θ/2.
+
+
+En effet,
+
+
+tan φ
+=
+sin θ/(2+cos θ)
+<
+sin θ/(1+cos θ)
+=
+tan(θ/2).
+
+
+Par conséquent
+
+
+arg R=2φ
+
+
+satisfait
+
+
+0<arg R<θ.
+
+
+Mais une q-ième racine de l’unité a un argument multiple de θ.
+Contradiction.
+
+
+Donc
+E_μ≠E_ν,
+et les spectres sont distincts.
+
+
+9. Théorème d’injectivité
+
+
+Pour tout k pair avec 3∤k,
+
+
+μ↦Spec(T_μ)
+
+
+est injective sur
+
+
+U(k)[2]\{1}.
+
+
+10. Corollaire de comptage exact
+
+
+La famille fournit exactement
+
+
+|U(k)[2]|-1
+
+
+classes spectrales distinctes de paires cospectrales non isomorphes.
+
+
+Si
+k=2^e k_0,
+k_0 impair,
+
+
+alors
+
+
+|U(k)[2]|
+=
+s(e)·2^{ω(k_0)},
+
+
+où
+s(1)=1,
+s(2)=2,
+s(e)=4 pour e≥3.
+
+
+Ainsi le nombre exact de classes spectrales produites est
+
+
+s(e)·2^{ω(k_0)}-1.
+
+
+11. Compatibilité avec les calculs
+
+
+inject.py avait vérifié exactement zéro collision pour les 83 valeurs pertinentes de k≤400.
+
+
+Le cas k=40 donne
+|U(40)[2]|-1=7,
+en accord avec les sept classes exceptionnelles observées dans C120.
+
+
+Ces calculs constituent désormais des contrôles indépendants du théorème.
+
+
+12. Portée
+
+
+Ce théorème établit l’injectivité à l’intérieur de la famille μ.
+Il ne prétend pas que ces classes soient les seules classes cospectrales non isomorphes parmi tous les triplets de C_{3k}.
+Il ne prouve aucune nouveauté bibliographique.

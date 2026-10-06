@@ -1,0 +1,6 @@
+﻿piece,verdict,temoin_et_emplacement,lien_avec_nombres
+mixed_cp_scan.py,NON RETROUVÉ original,10A4 SOURCE revision 3; pseudo code seulement,1100 générateurs et 348 cospectralités initiales
+mixed_cp_scan_v2.py,NON RETROUVÉ original,10A4 SOURCE revision 3; mention seulement,Compléments cycliques contribuant à 4674 et 1414
+mixed_general_scan.py,NON RETROUVÉ original,10A4 SOURCE revision 3; mention seulement,"H=(5,2,2) et (5,2,4): 720 générateurs et 240 cospectralités"
+sortie p3 indice 120 individualisée,NON RETROUVÉ original,Pack publication results.json retrouvé mais agrégé,6948/165 sans3;4905/2503 avec3; nouvelle sortie individualisée disponible
+extraction et certificats des 416 cas,NON RETROUVÉ original,Audit canonique section14: tableau retrouvé; audit_exact.py absent,24+60+112+184+36=416; nouvelle extraction avec certificats disponible

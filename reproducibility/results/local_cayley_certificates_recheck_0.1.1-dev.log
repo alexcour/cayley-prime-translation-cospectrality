@@ -1,0 +1,24 @@
+
+=== Exception I ===
+T1 (31, 181, 169) |S|= 12 reciprocal: C4 + C4 + C4
+T2 (31, 61, 199) |S|= 12 reciprocal: C6 + C6
+CERTIFICATE: reciprocal skeleton signatures differ
+  sig1= ((4, 4, (2, 2, 2, 2)), (4, 4, (2, 2, 2, 2)), (4, 4, (2, 2, 2, 2)))
+  sig2= ((6, 6, (2, 2, 2, 2, 2, 2)), (6, 6, (2, 2, 2, 2, 2, 2)))
+
+=== Exception II ===
+T1 (127, 157, 97) |S|= 24 reciprocal: no reciprocal edges
+T2 (157, 37, 67) |S|= 24 reciprocal: no reciprocal edges
+reciprocal skeletons agree; inspect radius-2 shell weights
+  differing weights: [1, 2, 3]
+  displayed weight w=3
+  T1: {'edges': 6, 'degree_multiset': ((0, 2), (3, 4)), 'component_sizes': (1, 1, 4), 'triangles': 4, 'edges_list': ((13, 43), (13, 97), (13, 127), (43, 97), (43, 127), (97, 127))}
+  T2: {'edges': 6, 'degree_multiset': ((2, 6),), 'component_sizes': (3, 3), 'triangles': 2, 'edges_list': ((37, 103), (37, 163), (67, 157), (67, 193), (103, 163), (157, 193))}
+CERTIFICATE: radius-2 weighted first-shell graphs differ
+
+=== Exception III ===
+T1 (127, 37, 43) |S|= 12 reciprocal: C4 + C4 + C4
+T2 (37, 67, 163) |S|= 12 reciprocal: C12
+CERTIFICATE: reciprocal skeleton signatures differ
+  sig1= ((4, 4, (2, 2, 2, 2)), (4, 4, (2, 2, 2, 2)), (4, 4, (2, 2, 2, 2)))
+  sig2= ((12, 12, (2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2)),)

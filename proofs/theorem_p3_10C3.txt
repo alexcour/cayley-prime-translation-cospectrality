@@ -1,0 +1,367 @@
+NOTE ÉDITORIALE — STAGING 0.1.1-dev
+Cette transcription publique est synchronisée avec le manuscrit anglais du 4 octobre 2026. Deux corrections éditoriales sont appliquées : (i) l’ancienne notation à double barre est remplacée par la notation non ambiguë « 3∣|H| » ; (ii) le lemme des cordes précise que ses deux descriptions peuvent coïncider lorsque a=-b. Le témoin Drive original est conservé inchangé dans proofs/original_witnesses/. Ces corrections ne constituent pas une nouvelle preuve et restent soumises à relecture indépendante.
+
+﻿THÉORÈME — CLASSIFICATION COMPLÈTE p=3 POUR T↔T+
+État : 4 octobre 2026
+
+
+STATUT
+E — PROUVÉ par l’argument autonome ci-dessous.
+N — NON AUDITÉE.
+Q — preuve autonome ; relecture indépendante recommandée.
+
+
+1. Cadre
+
+
+Soit H un groupe abélien fini engendré par deux éléments distincts κ,κ′.
+Dans H×C3, posons
+T={(κ,0),(κ,1),(κ′,0)},
+T^+=T+(0,1).
+
+
+Pour ψ∈H^, posons
+u=ψ(κ), v=ψ(κ′),
+Γ={(u,v):ψ∈H^}.
+
+
+Soit ω une racine cubique primitive et
+β(u,v)=(-v,-u).
+
+
+2. Énoncé
+
+
+A. Si 3∤|H|, alors
+T et T^+ sont cospectraux
+si et seulement si
+β(Γ)=Γ.
+
+
+B. Si 3∣|H|, alors
+T et T^+ sont cospectraux
+si et seulement si
+il existe h:H→F3 tel que
+h(κ′)=1
+et
+h(κ)∈{1,2}.
+
+
+La partie A est le théorème 10C1.
+La suite prouve la partie B.
+
+
+3. Lemme des cordes unitaires
+
+
+Soient a,b,c,d de module 1, avec a≠b.
+Si
+a-b=c-d,
+alors l’une au moins des deux possibilités suivantes se produit :
+(c,d)=(a,b),
+ou
+(c,d)=(-b,-a).
+Les deux possibilités peuvent coïncider lorsque a=-b.
+
+
+Preuve.
+Pour un vecteur non nul δ=a-b, les extrémités b des cordes orientées de vecteur δ sont les intersections des deux cercles
+|b|=1,
+|b+δ|=1.
+Il y a au plus deux intersections.
+Les deux solutions connues sont b et -a, qui donnent respectivement (a,b) et (-b,-a).
+Donc ce sont les seules ; si elles coïncident, les deux cercles sont tangents.
+
+
+4. Formes spectrales
+
+
+Pour x=(u,v)∈Γ, écrivons
+
+
+L1(x)=v-ω²u,
+L2(x)=v-ωu,
+
+
+R1(x)=-u+ωv,
+R2(x)=-u+ω²v.
+
+
+Le secteur trivial 2u+v est identique des deux côtés.
+La cospectralité équivaut donc à l’égalité avec multiplicités des occurrences L1,L2 et R1,R2.
+
+
+5. Première contrainte issue du caractère trivial
+
+
+Considérons
+L1(1,1)=1-ω² ≠0.
+
+
+Par le lemme des cordes, tout appariement avec R1 ou R2 force l’un des quatre éléments suivants à appartenir à Γ :
+
+
+D=(ω²,ω²),
+R=(ω²,ω),
+B=(-1,-1),
+A=(-1,-ω).
+
+
+Les deux premiers donnent immédiatement un morphisme h :
+D donne h(κ)=h(κ′)=1 après inversion ;
+R donne h(κ)=2, h(κ′)=1.
+
+
+6. La branche A force aussi h
+
+
+Supposons A=(-1,-ω)∈Γ.
+
+
+Appliquons le lemme à L1(A)=ω²-ω ≠0.
+Les quatre cibles possibles sont :
+(-ω²,-1),
+(ω,ω),
+(-ω²,-ω²),
+(ω,1).
+
+
+• (ω,ω) donne h.
+• (-ω²,-ω²)²=(ω,ω), donc donne h.
+• (-ω²,-1)²=(ω,1).
+• A²=(1,ω²), donc (ω,1)A²=(ω,ω²), qui donne h.
+Ainsi les deux derniers cas donnent également h.
+
+
+Donc, si h est absent, la seule possibilité issue du caractère trivial est
+
+
+B=(-1,-1)∈Γ.
+
+
+7. Transformations possibles en l’absence de h
+
+
+Posons
+a=(1,ω)
+et notons s(u,v)=(v,u).
+
+
+Comme B∈Γ et B est symétrique,
+βΓ=sΓ.
+
+
+Pour x=(u,v), le lemme des cordes donne, lorsque L1(x)≠0 :
+
+
+L1(x)=R1(y)
+⇒
+y=ω²x
+ou
+y=aβx ;
+
+
+L1(x)=R2(y)
+⇒
+y=(ω²u,ωv)
+ou
+y=βx.
+
+
+Les deux premières transformations “même corde” ω²x et (ω²u,ωv) ajouteraient à Γ respectivement
+(ω²,ω²)
+ou
+(ω²,ω),
+donc forceraient h.
+
+
+Ainsi, si h est absent et L1(x)≠0 :
+βx∈Γ
+ou
+aβx∈Γ.
+
+
+De même, si L2(x)≠0 :
+βx∈Γ
+ou
+a²βx∈Γ.
+
+
+8. Réduction à un quotient d’ordre 3
+
+
+Supposons h absent et βΓ≠Γ.
+Posons
+G1=sΓ=βΓ,
+K=G1∩Γ,
+q(y1,y2)=y2/y1.
+
+
+Comme la branche A forcerait h, on a a∉Γ.
+
+
+Soit y=βx∈G1\Γ.
+
+
+Si q(y) n’est ni ω ni ω², alors L1(x) et L2(x) sont tous deux non nuls.
+Les deux contraintes précédentes donnent
+y∈a^{-1}Γ
+et
+y∈a^{-2}Γ.
+Les deux cosets se rencontrent, donc a∈Γ, contradiction.
+
+
+Ainsi tout élément de G1\K satisfait
+q(y)∈{ω,ω²}.
+
+
+Prenons y∈G1\K et k∈K.
+Alors yk reste hors K, donc q(yk)∈{ω,ω²}.
+Si q(y)=ω, cela impose
+ω q(k)∈{ω,ω²}
+pour tout k∈K.
+Comme q(K) est un sous-groupe, on obtient
+q(K)={1}.
+
+
+Ainsi K est diagonal :
+K={(d,d):d∈D}
+pour un sous-groupe D de racines de l’unité.
+
+
+De plus, aucun élément hors K n’a q=1.
+Donc
+ker(q|G1)=K
+et
+q(G1)=μ3.
+
+
+Par conséquent
+[G1:K]=3.
+Comme |Γ|=|G1|,
+on a aussi
+[Γ:K]=3.
+
+
+9. Structure explicite du cas résiduel
+
+
+Choisissons dans Γ un élément de rapport ω :
+x0=(α,ωα).
+
+
+Alors
+Γ=K ⊔ x0K ⊔ x0²K.
+
+
+Comme B=(-1,-1)∈K,
+le groupe scalaire D contient -1.
+
+
+On compare maintenant exactement les secteurs non triviaux.
+
+
+Pour x=(d,d)∈K :
+les deux multisets T et T^+ coïncident déjà, car ils ne diffèrent que par le signe et -1∈D.
+
+
+Pour x=d x0=(dα,dωα) :
+T donne
+dα(ω-ω²)
+et 0 ;
+T^+ donne
+dα(ω²-1)
+et 0.
+
+
+Pour x=d x0²=(dα²,dω²α²) :
+T donne
+0
+et
+dα²(ω²-ω) ;
+T^+ donne
+0
+et
+dα²(ω-1).
+
+
+Posons s0=ω-ω².
+On a
+ω²-1=ω s0,
+ω-1=-ω² s0.
+
+
+Comme -1∈D, l’égalité des spectres non nuls impose l’égalité de multisets de cosets :
+
+
+{Dα, Dα²}
+=
+{Dωα, Dω²α²}.
+
+
+Deux multisets de deux cosets d’un même sous-groupe sont égaux selon l’une des deux permutations.
+
+
+Première permutation :
+Dα=Dωα.
+Alors ω∈D.
+Donc (ω,ω)∈K⊂Γ et h existe.
+
+
+Deuxième permutation :
+Dα=Dω²α².
+Alors ω²α∈D.
+En divisant x0 par l’élément diagonal (ω²α,ω²α)∈K, on obtient
+(ω,ω²)∈Γ.
+Cela donne encore h.
+
+
+Dans tous les cas, le supposé résidu h absent conduit à une contradiction.
+
+
+10. Conclusion pour 3∣|H|
+
+
+Toute cospectralité force h.
+La réciproque h⇒isomorphisme est déjà prouvée.
+
+
+Donc, si 3∣|H| :
+cospectralité ⇔ critère h ⇔ isomorphisme.
+
+
+11. Classification complète p=3
+
+
+Pour tout H=<κ,κ′> abélien fini :
+
+
+• si 3∤|H| :
+cospectralité ⇔ β(Γ)=Γ ;
+
+
+• si 3∣|H| :
+cospectralité ⇔ critère h ⇔ isomorphisme.
+
+
+Lorsque 3∣|H|, β(Γ)=Γ implique déjà h, comme établi dans 10C2.
+
+
+12. Vérification computationnelle indépendante
+
+
+Le balayage exact HNF jusqu’à l’indice 120 donne :
+• 6 948 réseaux avec 3∤|H|, 165 cospectraux, tous β ;
+• 4 905 réseaux avec 3∣|H|, 2 503 cospectraux, tous h ;
+• zéro divergence.
+
+
+Ces calculs confirment le théorème mais ne constituent pas sa preuve.
+
+
+13. Portée
+
+
+Ce théorème classifie la famille structurée T↔T^+ pour p=3.
+Il ne classifie pas tous les digraphes de Cayley cospectraux de valence 3.
+Il ne revendique aucune nouveauté.

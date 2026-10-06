@@ -1,0 +1,172 @@
+{
+  "description": "New exact HNF checks for the 2026-10-04 publication preparation",
+  "python": "3.12.14",
+  "dependencies": "Python standard library only",
+  "method": "Integer coefficient vectors modulo cyclotomic polynomial; matrices for examples",
+  "scans": [
+    {
+      "p": 3,
+      "max_H_order": 120,
+      "counts": {
+        "excluded_equal_generators": 120,
+        "tested": 11853,
+        "cospectral": 2668,
+        "h": 2503,
+        "beta": 312,
+        "without_3_torsion_tested": 6948,
+        "without_3_torsion_cospectral": 165,
+        "with_3_torsion_tested": 4905,
+        "with_3_torsion_cospectral": 2503
+      },
+      "mismatches": []
+    },
+    {
+      "p": 5,
+      "max_H_order": 30,
+      "counts": {
+        "excluded_equal_generators": 30,
+        "tested": 732,
+        "cospectral": 59,
+        "h": 59,
+        "beta": 0
+      },
+      "mismatches": []
+    },
+    {
+      "p": 7,
+      "max_H_order": 20,
+      "counts": {
+        "excluded_equal_generators": 20,
+        "tested": 319,
+        "cospectral": 6,
+        "h": 6,
+        "beta": 0
+      },
+      "mismatches": []
+    },
+    {
+      "p": 11,
+      "max_H_order": 12,
+      "counts": {
+        "excluded_equal_generators": 12,
+        "tested": 115,
+        "cospectral": 1,
+        "h": 1,
+        "beta": 0
+      },
+      "mismatches": []
+    }
+  ],
+  "matrix_examples": [
+    {
+      "hnf": [
+        4,
+        1,
+        1
+      ],
+      "p": 3,
+      "vertices": 12,
+      "matrix_cospectral": true,
+      "h": false,
+      "beta": true
+    },
+    {
+      "hnf": [
+        5,
+        3,
+        1
+      ],
+      "p": 5,
+      "vertices": 25,
+      "matrix_cospectral": false,
+      "h": false,
+      "beta": null
+    },
+    {
+      "hnf": [
+        1,
+        0,
+        5
+      ],
+      "p": 5,
+      "vertices": 25,
+      "matrix_cospectral": false,
+      "h": false,
+      "beta": null
+    },
+    {
+      "hnf": [
+        3,
+        0,
+        3
+      ],
+      "p": 3,
+      "vertices": 27,
+      "matrix_cospectral": true,
+      "h": true,
+      "beta": false
+    },
+    {
+      "hnf": [
+        3,
+        2,
+        1
+      ],
+      "p": 3,
+      "vertices": 9,
+      "matrix_cospectral": true,
+      "h": true,
+      "beta": false
+    },
+    {
+      "hnf": [
+        6,
+        0,
+        1
+      ],
+      "p": 3,
+      "vertices": 18,
+      "matrix_cospectral": false,
+      "h": false,
+      "beta": false
+    },
+    {
+      "hnf": [
+        5,
+        2,
+        1
+      ],
+      "p": 5,
+      "vertices": 25,
+      "matrix_cospectral": true,
+      "h": true,
+      "beta": null
+    },
+    {
+      "hnf": [
+        9,
+        4,
+        1
+      ],
+      "p": 3,
+      "vertices": 27,
+      "matrix_cospectral": true,
+      "h": true,
+      "beta": false
+    },
+    {
+      "hnf": [
+        12,
+        7,
+        1
+      ],
+      "p": 3,
+      "vertices": 36,
+      "matrix_cospectral": true,
+      "h": true,
+      "beta": true
+    }
+  ],
+  "elapsed_seconds": 37.715,
+  "all_checks_passed": true
+}

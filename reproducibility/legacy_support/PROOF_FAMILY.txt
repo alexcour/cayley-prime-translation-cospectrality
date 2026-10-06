@@ -1,0 +1,229 @@
+COURET UNIFICATION
+Certificat des trois collisions et famille sur Cm fois C6
+3 octobre 2026
+
+Statut
+Cette note contient une preuve mathématique écrite et un certificat fini
+reproductible en arithmétique exacte. Aucune formalisation Lean n'a été
+exécutée. L'originalité de la famille décrite ci-dessous n'est pas établie.
+Le cas cyclique d'ordre 12 a un antécédent précis identifié en 2021.
+
+1 Un invariant qui prouve les trois non isomorphismes
+
+Soit D un digraphe et A sa matrice d'adjacence, avec A[x,y]=1 lorsque
+x -> y est un arc. Pour un sommet x, définissons
+
+Psi_l(D,x) = multiensemble { (A^l)[y,x] : x -> y }.
+
+Chaque valeur compte les marches dirigées de longueur l qui vont de y
+à x. Les marches peuvent répéter des sommets. Cet objet est préservé
+par tout isomorphisme de digraphes. Dans un digraphe de Cayley, il est
+indépendant de x par translation des sommets.
+
+Pour un ensemble de connexion T dans un groupe abélien, la valeur
+associée à l'arc 1 -> t est le nombre de l-uplets ordonnés de T dont
+le produit est t^{-1}. Ce nombre s'obtient par convolution entière.
+
+Pour chacune des trois paires du rapport, le calcul donne exactement
+
+Psi_3(D_T,1)   = {3,4,5},
+Psi_3(D_T',1)  = {3,3,6}.
+
+Cela prouve leur non-isomorphisme sans recours à NetworkX, ni à une
+recherche exhaustive de bijections. La somme des trois valeurs vaut
+12 des deux côtés, ce qui explique la compatibilité avec la même
+trace de A^4 : elle vaut 12 fois le nombre de sommets. Le spectre
+conserve cette somme, mais ne conserve pas sa répartition entre arcs.
+
+Les paires vérifiées modulo 210 sont
+
+I   T={31,181,169}      T'={31,61,199}       |S|=12
+II  T={127,157,97}      T'={157,37,67}       |S|=24
+III T={127,37,43}       T'={37,67,163}       |S|=12
+
+Dans chaque ligne, S=<T>=<T'> comme sous-ensemble effectif de U(210).
+Le script calcule les deux polynômes caractéristiques par les traces
+entières et les identités de Newton, et vérifie leur égalité. Il
+vérifie aussi l'égalité des spectres dans Z[z]/(z^4-z^2+1).
+
+2 Une même famille explique les cas I et II
+
+On travaille maintenant en notation additive. Pour m pair, m>=2,
+posons G_m=C_m x C_6 et les deux ensembles
+
+A_m={(1,0),(1,1),(1,3)},
+B_m={(1,1),(1,2),(1,4)}.
+
+Ces deux ensembles ont trois éléments distincts, ne contiennent pas
+l'identité et engendrent G_m : leurs différences engendrent (0,1),
+puis un de leurs éléments permet de retrouver (1,0).
+
+Proposition
+Pour chaque entier pair m>=2, les digraphes Cay(G_m,A_m) et
+Cay(G_m,B_m) sont cospectraux. Ils sont isomorphes exactement lorsque
+3 divise m. Ils sont donc cospectraux et non isomorphes pour tous les
+entiers pairs m non divisibles par 3.
+
+Preuve de la cospectralité
+Soient eta=exp(2*pi*i/m), zeta=exp(2*pi*i/6) et
+h(z)=1+z+z^3. Les caractères sont indexés par (r,j) dans C_m x C_6.
+Les valeurs propres sont
+
+lambda_A(r,j)=eta^r h(zeta^j),
+lambda_B(r,j)=eta^r zeta^j h(zeta^j).
+
+Les six évaluations donnent les identités exactes
+
+zeta^0 h(zeta^0)=h(zeta^0),
+zeta^j h(zeta^j)=-h(zeta^{-j}) pour j=1,2,3,4,5.
+
+Puisque m est pair, eta^{m/2}=-1. La permutation des caractères
+
+(r,0) -> (r,0),
+(r,j) -> (r+m/2,-j) pour j!=0
+
+associe donc chaque valeur propre de B à une valeur propre égale de A.
+Elle est bijective et préserve toutes les multiplicités. Cette
+permutation est définie par morceaux; elle n'est pas présentée comme
+un automorphisme du groupe des caractères.
+
+Preuve de l'isomorphisme lorsque 3 divise m
+Comme m est pair, cela signifie 6|m. L'application
+
+F(u,v)=(u,v+u) dans C_m x C_6
+
+est alors un automorphisme bien défini. Elle envoie A_m sur B_m.
+L'application n'est pas bien définie sur C_m x C_6 lorsque 6 ne
+divise pas m; cette seule remarque ne prouverait pas un non-isomorphisme.
+
+Preuve du non-isomorphisme dans les autres cas
+Pour m=2, le calcul direct de Psi_3 donne {3,4,5} et {3,3,6}.
+
+Pour m>=4, prenons l=m-1. La première coordonnée d'une marche de
+longueur l vaut m-1=-1 dans C_m, comme l'exige un retour après l'arc
+initial. Le profil dépend seulement des coefficients de h(z)^l
+modulo z^6-1. Notons c_l(a) le coefficient de z^a dans cette réduction.
+
+La transformée de Fourier à six termes donne
+
+c_l(a) = [3^l-(-1)^a+2*cos((l-a)*pi/3)
+          +2*3^{l/2}*cos(l*pi/6-2*a*pi/3)]/6
+
+pour l impair. Les profils sont
+
+Psi_l(A_m) = {c_l(0),c_l(5),c_l(3)},
+Psi_l(B_m) = {c_l(-m),c_l(5-m),c_l(3-m)},
+
+avec les arguments réduits modulo 6. La seconde formule utilise
+B_m=A_m+(0,1) : les l pas et l'arc initial décalent la seconde
+coordonnée au total de m.
+
+Cas m=6q+4
+Posons
+
+c=(3^{m-1}-3)/6,
+d=(3-(-1)^q*3^{m/2})/6.
+
+La formule à six termes se simplifie en
+
+Psi_l(A_m)={c,c+1,c+d},
+Psi_l(B_m)={c+d,c+d,c+1-d}.
+
+Pour m>=4, d n'est ni 0 ni 1. Le premier profil a trois valeurs
+distinctes; le second a une valeur répétée. Ils diffèrent.
+
+Cas m=6q+2, m>=8
+Posons
+
+p=(-1)^q*3^{m/2},
+c=(3^{m-1}+p)/6,
+d=(3^{m-1}-p)/6,
+e=(3^{m-1}-3)/6.
+
+On obtient
+
+Psi_l(A_m)={c,c,d},
+Psi_l(B_m)={c,e,e+1}.
+
+Comme |p|>=81, c diffère de e et de e+1; c diffère aussi de d.
+Le premier profil a une valeur répétée et le second trois valeurs
+distinctes. Cela achève la preuve du non-isomorphisme.
+
+Le script vérifie les identités sur les six racines par arithmétique
+exacte, puis les formules de profils pour les 40 valeurs paires
+de m allant de 2 à 80. Ces contrôles complètent la preuve écrite;
+ils ne constituent pas à eux seuls une preuve uniforme.
+
+3 Correspondance avec les représentants modulo 210
+
+Cas I
+Prenons a=169 d'ordre 2 et b=31 d'ordre 6. Les coordonnées (u,v)
+désignent a^u b^v. Les deux ensembles du rapport deviennent
+
+T={(1,0),(0,1),(0,3)},
+T'={(0,1),(0,5),(1,1)}.
+
+L'automorphisme (u,v)->(u+v mod 2,v) envoie T sur A_2.
+L'automorphisme (u,v)->(v mod 2,3u+4v mod 6) envoie T' sur B_2.
+Le cas I est donc la paire de la famille pour m=2, après deux
+changements de coordonnées indépendants et explicites.
+
+Cas II
+Prenons a=127 d'ordre 4 et b=31 d'ordre 6. Les coordonnées a^u b^v
+donnent directement T=A_4 et T'=B_4. Le cas II correspond à m=4.
+
+Il ne faut donc plus traiter I et II comme deux mécanismes sans
+relation. Ce sont deux instances connexes d'une même famille. Une
+réduction de la première coordonnée de C_4 vers C_2 relie ces instances;
+ce lien est un revêtement, pas une réunion de copies disjointes.
+
+4 Antécédent bibliographique précis du cas III
+
+Dans S=C_12, le générateur 37 transforme les deux ensembles du rapport
+en {1,3,9} et {1,5,7}. L'automorphisme k->-k de C_12 les envoie sur
+{3,9,11} et {5,7,11}.
+
+Ces deux ensembles sont exactement ceux de l'exemple 3.1.13 de
+Katja Mönius, Algebraic and Arithmetic Properties of Graph Spectra,
+thèse de doctorat, Würzburg, 2021, page imprimée 39, page PDF 47.
+Source primaire consultée : https://d-nb.info/1230324208/34
+
+Le cas III possède donc un antécédent explicite. Il ne doit pas être
+présenté comme une découverte nouvelle. La recherche effectuée ici
+ne constitue pas un audit exhaustif d'antériorité de la famille de
+la section 2 ni de l'invariant de la section 1.
+
+5 Portée du décompte global
+
+Le script indépendant reproduit le corpus complet des 17296
+triplets de U(210), avec les décomptes
+
+318 orbites sous Aut(G)
+238 types abstraits exacts des paires (<T>,T)
+213 classes d'isomorphisme des digraphes
+210 classes spectrales exactes
+
+Les 25 rapprochements entre types abstraits distincts qui donnent un
+même digraphe sont accompagnés de bijections de sommets, dont toutes
+les arêtes sont vérifiées. Les trois paires restantes sont séparées
+par les profils Psi_3. Les types abstraits utilisent les noyaux
+complets des applications (Z/12)^3 -> <T>, canoniques sous permutation
+des trois générateurs, et non un entier hash(best).
+
+Les 207 classes spectrales qui ne présentent aucune collision
+déterminent le digraphe à l'intérieur de ce corpus de triplets de
+U(210). Cela ne prouve pas que ces digraphes soient déterminés par
+leur spectre parmi tous les digraphes, ni parmi tous les digraphes
+de Cayley d'autres groupes.
+
+Dans ce corpus, l'observable enrichi (Phi_1,Psi_3) possède exactement
+213 valeurs distinctes, soit autant que les classes d'isomorphisme
+de digraphes. Il sépare donc toutes les classes de ce corpus.
+La portée est strictement finie : pour m>=8 non divisible par 3,
+les graphes de la famille ont tous Psi_3={0,0,0}, car une marche
+fermée de longueur 4 ne peut revenir dans la première coordonnée.
+Il faut alors un horizon plus long; la preuve utilise Psi_{m-1}.
+
+Le résultat est une classification finie contrôlée et une famille
+explicitement démontrée. Aucun lien vers RH, Goldbach ou une loi
+physique de provenance n'est établi par ces arguments.

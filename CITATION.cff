@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Public review snapshot; no DOI has been assigned. Cite a commit or 0.1.x tag if a fixed reference is needed."
+title: "Cospectrality of a structured three-element support under prime cyclic translation"
+type: article
+authors:
+  - family-names: Couret
+    given-names: Alexandre
+    orcid: "https://orcid.org/0009-0000-8246-7146"
+    affiliation: "Independent researcher, France"
+version: "0.1.2-review"
+keywords:
+  - Cayley digraphs
+  - cospectrality
+  - roots of unity
+  - finite abelian groups
+  - circulants
