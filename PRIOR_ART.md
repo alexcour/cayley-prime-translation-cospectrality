@@ -88,7 +88,7 @@ The correspondence is an algebraic deduction in this update, not a quotation or 
 ## Remaining primary-source gate
 
 1. Obtain Meng's actual pp. 51-53 and compare its constructions and conclusions with each repository claim; the bibliographic corroboration is not this step.
-2. Read Huang-Chang's complete theorem statements and proofs, retaining exact support restrictions and the spectral invariant. Secondary theorem summaries are not used here to close this gate.
+2. Obtain Huang-Chang's primary full text to verify the restated theorem wording/proofs and complete the support-level comparison on the only relevant cyclic intersection `k=2^a`. The published Liu-Zhou restatement already shows that Huang-Chang is not a global blocker outside that intersection.
 3. Compare the remaining cyclic involutions with all relevant article constructions, and check equivalent group/support presentations before asserting exclusion.
 4. Preserve the distinction between mathematical proof status, bibliographic priority and independent review.
 
