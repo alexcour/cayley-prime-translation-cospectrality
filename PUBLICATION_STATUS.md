@@ -1,6 +1,6 @@
 # Publication status
 
-Status date: 2026-10-06
+Status date: 2026-10-07
 Version: 0.1.3-review
 Review channel: PUBLIC REVIEW / 0.1.x
 Stable scientific release: NO-GO
@@ -53,7 +53,8 @@ Independent human mathematical review remains OPEN.
 
 ## Publication state
 
-- GitHub: **authorized only as PUBLIC REVIEW / 0.1.x**. The repository may be made public for external checking while all status warnings remain visible.
+- GitHub: **public as PUBLIC REVIEW / 0.1.x** for external checking, with all status warnings retained.
+- Repository verification (2026-10-07): PR #1 merged at commit [`5e31912134fb6303639facedf4150d32255795bd`](https://github.com/alexcour/cayley-prime-translation-cospectrality/commit/5e31912134fb6303639facedf4150d32255795bd); [verify #4 (run 37585311793)](https://github.com/alexcour/cayley-prime-translation-cospectrality/actions/runs/37585311793) succeeded on that exact commit, with `exact-checks` and `manuscript-build` both passing.
 - Stable release (`v1.0.0`): BLOCKED until the stable-release gates are closed.
 - Zenodo: DO NOT CREATE a Cayley DOI in this review stage.
 - HAL: DO NOT DEPOSIT in this review stage.

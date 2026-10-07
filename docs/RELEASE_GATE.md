@@ -4,7 +4,7 @@ Current decision: **GO PUBLIC REVIEW / 0.1.x; NO-GO STABLE v1.0.0.**
 
 ## Gate R -- public review 0.1.x
 
-A `0.1.x` GitHub repository/tag may be public when all of the following remain true:
+The public `0.1.x` GitHub repository remains within Gate R only while all of the following remain true:
 
 - `PUBLICATION_STATUS.md` states `PUBLIC REVIEW / 0.1.x` and `N = NON AUDITEE` for the general claims;
 - `CLAIM_BOUNDARY.md` forbids priority/discovery wording while the antecedence audit is open;
@@ -13,7 +13,9 @@ A `0.1.x` GitHub repository/tag may be public when all of the following remain t
 - no workflow in this stage creates a Zenodo DOI, HAL deposit, arXiv submission, or stable scientific release;
 - no `v1.0.0` tag is created in this stage.
 
-**Gate R status: PASS for publication as a bounded public-review snapshot, subject to final repository-side file/commit verification.**
+**Gate R status: PASS for the published bounded public-review snapshot. Repository-side file/commit verification completed on 2026-10-07 at commit [`5e31912134fb6303639facedf4150d32255795bd`](https://github.com/alexcour/cayley-prime-translation-cospectrality/commit/5e31912134fb6303639facedf4150d32255795bd).**
+
+The repository is public. After PR #1 was merged, [verify #4 (run 37585311793)](https://github.com/alexcour/cayley-prime-translation-cospectrality/actions/runs/37585311793) completed successfully on that exact merge commit: `exact-checks` and `manuscript-build` both passed.
 
 ## Gates still open before stable v1.0.0
 
