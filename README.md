@@ -2,7 +2,7 @@
 
 **Review status: PUBLIC REVIEW / 0.1.x. Current package: 0.1.3-review (2026-10-06). This is an unstable review snapshot, not a stable scientific release.**
 
-This repository is prepared for public external review and for a dated, inspectable record of the current work on the structured support-translation family
+This repository is public for external review and provides a dated, inspectable record of the current work on the structured support-translation family
 
 `T = {(kappa,0),(kappa,c),(kappa',0)}` and `T+ = T + (0,c)`
 
