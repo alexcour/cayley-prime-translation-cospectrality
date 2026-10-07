@@ -22,7 +22,9 @@ These are the current internal E-status claims. Independent human mathematical r
 
 **N = NON AUDITEE** for the general classification claims and related mechanisms unless a narrower item is explicitly marked as already antecedent.
 
-The 12-vertex circulant example is already antecedent: equivalent examples appear in work of Julia Brown and Katja Monius. Brown also overlaps with an infinite cyclic subfamily. Primary-source comparison remains open for Meng (1998) and Huang-Chang (2001).
+The 12-vertex circulant example is already antecedent: equivalent examples appear in work of Julia Brown and Katja Monius. Brown also overlaps with an infinite cyclic subfamily. Primary-source comparison remains open for Meng (1998).
+
+For Huang-Chang (2001), Liu-Zhou's 2022 survey restates the relevant theorems with their order and support hypotheses. In the cyclic specialization `n=3k`, with even `k` and `3` not dividing `k`, the stated order forms meet this family only when `k=2^a`. Thus Huang-Chang does not act as a global antecedence blocker for cyclic cases in which `k` has an odd prime divisor other than `3`. Primary full-text reading is still pending for the exact support-level comparison on the power-of-two intersection.
 
 The primary article by Katja Mönius, *Constructions of isospectral circulant graphs*, **Elemente der Mathematik 75** (2020), 45-57, DOI [10.4171/EM/404](https://doi.org/10.4171/EM/404), has been inspected. As detailed in `PRIOR_ART.md`, its Theorem 10 recovers **adjacency cospectrality** for the entire cyclic subfamily `p=3`, `H=C_k`, `3` not dividing `k`, `4|k`, `kappa=1`, `kappa'=mu=1+k/2`, including `k=4`. This correspondence uses CRT coordinates, the complement branch of Theorem 10 with no additional support, and a unit multiplier; it is a deduction from the article, not a claim that the article names this family.
 
