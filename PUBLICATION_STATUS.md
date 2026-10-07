@@ -25,7 +25,7 @@ Public review status does not upgrade E and is not evidence of external validati
 - Cyclic injectivity theorem: NON AUDITEE TO CLOSURE.
 - `C_m x C_6` family, `h` criterion, beta mechanism, I/II, `Psi_l`: priority not established.
 
-Primary-source comparison remains open for Meng (1998) and Huang-Chang (2001). The Mönius 2020 primary article has been inspected for the explicit cospectrality overlap above; comparisons beyond that subfamily and the general `h`/`beta` classifications remain **N = NON AUDITEE**.
+Primary-source comparison remains open for Meng (1998). For Huang-Chang (2001), Liu-Zhou's 2022 survey restates the relevant theorem hypotheses: the cyclic specialization `n=3k`, with even `k` and `3` not dividing `k`, intersects the stated order families only for `k=2^a`. This removes Huang-Chang as a global blocker outside the power-of-two intersection, but primary full-text reading is still pending for an exact support-level comparison there. The Mönius 2020 primary article has been inspected for the explicit cospectrality overlap above; comparisons beyond that subfamily and the general `h`/`beta` classifications remain **N = NON AUDITEE**.
 
 No priority or discovery wording is authorized while N remains open.
 

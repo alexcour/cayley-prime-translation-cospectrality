@@ -26,7 +26,7 @@ These established entries are retained from `proofs/original_witnesses/PRIOR_ART
 | Work | Verified record | Evidence inspected on 2026-10-07 |
 | --- | --- | --- |
 | Meng 1998 | J. Meng, *Non-isomorphic cospectral Cayley digraphs*, **Graph Theory Notes of New York 35** (1998), 51-53. | Exact citation in Liu-Zhou's published bibliography, reference **[302]**, p. **158** ([journal PDF](https://www.combinatorics.org/ojs/index.php/eljc/article/download/v29i2p9/pdf)). This is secondary bibliographic corroboration; Meng's primary pages were not obtained. No DOI has been verified. |
-| Huang-Chang 2001 | Qiongxiang Huang and An Chang, *Circulant digraphs determined by their spectra*, **Discrete Mathematics 240** (2001), 261-270. DOI [10.1016/S0012-365X(01)00198-4](https://doi.org/10.1016/S0012-365X(01)00198-4). | [Publisher record and abstract](https://www.sciencedirect.com/science/article/pii/S0012365X01001984); a [full-text PDF indexed at CORE](https://core.ac.uk/download/pdf/82185896.pdf) was located but returned HTTP 403. Exact theorem text was not inspected. |
+| Huang-Chang 2001 | Qiongxiang Huang and An Chang, *Circulant digraphs determined by their spectra*, **Discrete Mathematics 240** (2001), 261-270. DOI [10.1016/S0012-365X(01)00198-4](https://doi.org/10.1016/S0012-365X(01)00198-4). | [Publisher record and abstract](https://www.sciencedirect.com/science/article/pii/S0012365X01001984), plus Liu-Zhou 2022, Theorem 93, which explicitly restates Huang-Chang Theorems 1--3 and their support/order hypotheses. A full primary PDF indexed at CORE remained inaccessible, so the restatement is authoritative secondary evidence rather than a substitute for primary reading. |
 | Mönius 2020 | Katja Mönius, *Constructions of isospectral circulant graphs*, **Elemente der Mathematik 75**, no. 2 (2020), 45-57. DOI [10.4171/EM/404](https://doi.org/10.4171/EM/404). | [Publisher record](https://ems.press/journals/em/articles/16864) and [complete primary article in ETH's E-Periodica archive](https://www.e-periodica.ch/cntmng?bot=1&pid=edm-001%3A2020%3A75%3A%3A224), including visual inspection of Theorem 10, p. 54. |
 
 ### Meng: citation corroborated, primary comparison open
@@ -37,17 +37,18 @@ The separately indexed Meng-Xu paper, *On the isomorphism problem of Cayley grap
 
 Meng's group hypotheses, support construction, valency, spectral convention and conclusions remain unverified here. Consequently, no overlap or non-overlap with 10A6, 10C3, the cyclic family, or `C_m x C_6` is asserted. **N = NON AUDITEE** for each such comparison.
 
-### Huang-Chang: order-level comparison only
+### Huang-Chang: theorem-level order boundary from a published restatement
 
-The primary abstract specifies circulant orders `r^a` and `r^a s^b`, with distinct primes `r,s`; these symbols are kept separate from the repository's exterior prime `p`. It does not supply the exact support hypotheses needed for a theorem-level comparison. No unconditional determination-by-spectrum statement is inferred from the title or abstract.
+The primary article itself was not obtained in full, but Liu-Zhou 2022, Theorem 93, explicitly restates Huang-Chang Theorems 1--3. In that restatement, `Cay(Z_n,S)` is Cay-DS under three cases: (a) prime-power order with a coset exclusion; (b) `n=p^a q^b` for distinct odd primes, with a support-size/location bound; and (c) `n=2^a q^b` for odd prime `q), with `S` generating and the same bound. This is stronger evidence than the abstract alone, while still remaining secondary to the primary paper.
 
-The following are deductions from those order classes and the repository hypotheses, not claims about unread theorems:
+Consequences for the repository family:
 
 - Positive `h` cases are not direct same-group circulant instances, by the noncyclicity observation above.
-- For the cyclic specialization `n=3k`, the listed order classes intersect it precisely at `k=2^a` (`a>=1`): `n=2^a*3`. If even `k` has an odd prime factor other than `3`, then `n` has at least three distinct prime factors and lies outside those listed order classes.
-- Coinciding orders do not establish coinciding support hypotheses or conclusions. In particular, `n=12` is in the stated order range and already contains an antecedent cospectral nonisomorphic pair; the abstract cannot be read as an unrestricted theorem for every support at that order.
+- For the cyclic specialization `n=3k`, with even `k` and `3` not dividing `k`, the Huang-Chang order forms intersect the family only when `k=2^a`: then `n=2^a*3`, falling under case (c). If `k` has any odd prime divisor other than `3`, then `n` has at least three distinct prime divisors and lies outside all three stated order forms.
+- Therefore Huang-Chang is **not a global antecedence blocker** for the cyclic family outside the power-of-two intersection. On the intersection `k=2^a`, its Cay-DS conclusion is relevant and must be reconciled support-by-support with the already known Brown/Mönius overlaps; the order coincidence alone does not identify the same support pair.
+- The restated theorem does not directly address the noncyclic positive `h` regime of 10A6.
 
-Exact hypotheses and implications for `h`, `beta`, cyclic cospectrality, nonisomorphism and 10B1 remain pending primary reading. **N = NON AUDITEE**.
+Primary full-text reading remains desirable to verify the exact original wording/proof and to perform the support-level comparison on `k=2^a`. The general `h`/`beta` classifications and 10B1 remain **N = NON AUDITEE**.
 
 ### Mönius: explicit primary-source overlap
 
@@ -87,7 +88,7 @@ The correspondence is an algebraic deduction in this update, not a quotation or 
 ## Remaining primary-source gate
 
 1. Obtain Meng's actual pp. 51-53 and compare its constructions and conclusions with each repository claim; the bibliographic corroboration is not this step.
-2. Read Huang-Chang's complete theorem statements and proofs, retaining exact support restrictions and the spectral invariant. Secondary theorem summaries are not used here to close this gate.
+2. Obtain Huang-Chang's primary full text to verify the restated theorem wording/proofs and complete the support-level comparison on the only relevant cyclic intersection `k=2^a`. The published Liu-Zhou restatement already shows that Huang-Chang is not a global blocker outside that intersection.
 3. Compare the remaining cyclic involutions with all relevant article constructions, and check equivalent group/support presentations before asserting exclusion.
 4. Preserve the distinction between mathematical proof status, bibliographic priority and independent review.
 
