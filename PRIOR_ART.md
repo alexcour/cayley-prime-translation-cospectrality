@@ -37,17 +37,18 @@ The separately indexed Meng-Xu paper, *On the isomorphism problem of Cayley grap
 
 Meng's group hypotheses, support construction, valency, spectral convention and conclusions remain unverified here. Consequently, no overlap or non-overlap with 10A6, 10C3, the cyclic family, or `C_m x C_6` is asserted. **N = NON AUDITEE** for each such comparison.
 
-### Huang-Chang: order-level comparison only
+### Huang-Chang: theorem-level order boundary from a published restatement
 
-The primary abstract specifies circulant orders `r^a` and `r^a s^b`, with distinct primes `r,s`; these symbols are kept separate from the repository's exterior prime `p`. It does not supply the exact support hypotheses needed for a theorem-level comparison. No unconditional determination-by-spectrum statement is inferred from the title or abstract.
+The primary article itself was not obtained in full, but Liu-Zhou 2022, Theorem 93, explicitly restates Huang-Chang Theorems 1--3. In that restatement, `Cay(Z_n,S)` is Cay-DS under three cases: (a) prime-power order with a coset exclusion; (b) `n=p^a q^b` for distinct odd primes, with a support-size/location bound; and (c) `n=2^a q^b` for odd prime `q), with `S` generating and the same bound. This is stronger evidence than the abstract alone, while still remaining secondary to the primary paper.
 
-The following are deductions from those order classes and the repository hypotheses, not claims about unread theorems:
+Consequences for the repository family:
 
 - Positive `h` cases are not direct same-group circulant instances, by the noncyclicity observation above.
-- For the cyclic specialization `n=3k`, the listed order classes intersect it precisely at `k=2^a` (`a>=1`): `n=2^a*3`. If even `k` has an odd prime factor other than `3`, then `n` has at least three distinct prime factors and lies outside those listed order classes.
-- Coinciding orders do not establish coinciding support hypotheses or conclusions. In particular, `n=12` is in the stated order range and already contains an antecedent cospectral nonisomorphic pair; the abstract cannot be read as an unrestricted theorem for every support at that order.
+- For the cyclic specialization `n=3k`, with even `k` and `3` not dividing `k`, the Huang-Chang order forms intersect the family only when `k=2^a`: then `n=2^a*3`, falling under case (c). If `k` has any odd prime divisor other than `3`, then `n` has at least three distinct prime divisors and lies outside all three stated order forms.
+- Therefore Huang-Chang is **not a global antecedence blocker** for the cyclic family outside the power-of-two intersection. On the intersection `k=2^a`, its Cay-DS conclusion is relevant and must be reconciled support-by-support with the already known Brown/Mönius overlaps; the order coincidence alone does not identify the same support pair.
+- The restated theorem does not directly address the noncyclic positive `h` regime of 10A6.
 
-Exact hypotheses and implications for `h`, `beta`, cyclic cospectrality, nonisomorphism and 10B1 remain pending primary reading. **N = NON AUDITEE**.
+Primary full-text reading remains desirable to verify the exact original wording/proof and to perform the support-level comparison on `k=2^a`. The general `h`/`beta` classifications and 10B1 remain **N = NON AUDITEE**.
 
 ### Mönius: explicit primary-source overlap
 
