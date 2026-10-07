@@ -19,12 +19,13 @@ Public review status does not upgrade E and is not evidence of external validati
 
 - C12 example: ANTECEDENT / PRIOR.
 - Brown power-of-two cyclic subfamily: ANTECEDENT / OVERLAPPING.
+- Mönius 2020, Theorem 10: OVERLAPPING for adjacency cospectrality when `p=3`, `H=C_k`, `3` not dividing `k`, `4|k`, `kappa=1`, `kappa'=mu=1+k/2`, including `k=4`; see `PRIOR_ART.md`. **N = NON AUDITEE** for the other involutions and the complete cyclic family; no antecedence conclusion for 10B1's injectivity or a nonisomorphism criterion follows from this comparison.
 - General `p>=5` classification: NON AUDITEE TO CLOSURE.
 - General `p=3` classification: NON AUDITEE TO CLOSURE.
 - Cyclic injectivity theorem: NON AUDITEE TO CLOSURE.
 - `C_m x C_6` family, `h` criterion, beta mechanism, I/II, `Psi_l`: priority not established.
 
-Primary-source comparison remains open for Meng (1998), Huang-Chang (2001), and the Monius 2020 article.
+Primary-source comparison remains open for Meng (1998) and Huang-Chang (2001). The Mönius 2020 primary article has been inspected for the explicit cospectrality overlap above; comparisons beyond that subfamily and the general `h`/`beta` classifications remain **N = NON AUDITEE**.
 
 No priority or discovery wording is authorized while N remains open.
 

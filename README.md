@@ -22,7 +22,11 @@ These are the current internal E-status claims. Independent human mathematical r
 
 **N = NON AUDITEE** for the general classification claims and related mechanisms unless a narrower item is explicitly marked as already antecedent.
 
-The 12-vertex circulant example is already antecedent: equivalent examples appear in work of Julia Brown and Katja Monius. Brown also overlaps with an infinite cyclic subfamily. Primary-source comparison remains open for Meng (1998), Huang-Chang (2001), and the Monius 2020 article.
+The 12-vertex circulant example is already antecedent: equivalent examples appear in work of Julia Brown and Katja Monius. Brown also overlaps with an infinite cyclic subfamily. Primary-source comparison remains open for Meng (1998) and Huang-Chang (2001).
+
+The primary article by Katja Mönius, *Constructions of isospectral circulant graphs*, **Elemente der Mathematik 75** (2020), 45-57, DOI [10.4171/EM/404](https://doi.org/10.4171/EM/404), has been inspected. As detailed in `PRIOR_ART.md`, its Theorem 10 recovers **adjacency cospectrality** for the entire cyclic subfamily `p=3`, `H=C_k`, `3` not dividing `k`, `4|k`, `kappa=1`, `kappa'=mu=1+k/2`, including `k=4`. This correspondence uses CRT coordinates, the complement branch of Theorem 10 with no additional support, and a unit multiplier; it is a deduction from the article, not a claim that the article names this family.
+
+**N = NON AUDITEE** remains explicit for the other involutions, the complete cyclic family, spectral injectivity 10B1, and the general `h`/`beta` classifications. This cospectrality overlap alone establishes no antecedence conclusion for injectivity or a nonisomorphism criterion. Independent human mathematical review remains open.
 
 No priority language is authorized in this review series. In particular, titles, abstracts, release notes, repository descriptions, and summaries must not present the work as a priority result or use promotional discovery wording.
 
