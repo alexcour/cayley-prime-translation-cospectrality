@@ -76,12 +76,28 @@ def main():
  assert (independent_sets(a,5),independent_sets(b,5))==(342,360)
  assert (independent_sets(a,6),independent_sets(b,6))==(87,129)
  assert not nx.is_isomorphic(graph(a),graph(b))
+ # Second fully intrinsic counterexample: independently verify all 3060 four-vertex motifs.
+ s2=(1,8,9);t2=(9,10,11)
+ a2,b2=matrix(s2),matrix(t2)
+ assert histogram(a2,look,quads)==histogram(b2,look,quads)
+ assert len(quads)==3060
+ counts2=[(independent_sets(a2,k),independent_sets(b2,k)) for k in range(5,10)]
+ assert counts2==[(810,810),(438,438),(126,126),(18,18),(0,2)]
+ independent_nines_T=[list(v) for v in combinations(range(N),9)
+                      if all(not b2[u][v] and not b2[v][u] for u,v in combinations(v,2))]
+ assert independent_nines_T==[list(range(9)),list(range(9,18))]
+ assert counts2[-1][0]!=counts2[-1][1] # Isomorphism-invariant separation, no VF2 needed.
+
  result={'experiment':'SPEC-OBS-09','completed_group':'D9','order':18,'supports':594,
   'four_motif_classes':10,'isomorphism_classes':12,'vf2_checks':vf2,
   'fibers_with_multiple_isomorphism_classes':2,'representatives':witness_fibers,
   'certified_witness':{'S':s,'T':t,'same_four_motifs':True,
    'independent_5':[342,360],'independent_6':[87,129],
    'nonisomorphic':True},
+  'second_certified_witness':{'S':s2,'T':t2,'same_four_motifs':True,
+   'independent_5_to_9':{str(k):list(v) for k,v in zip(range(5,10),counts2)},
+   'independent_9_sets_T':independent_nines_T,'nonisomorphic':True,
+   'certificate':'independent_9_counts_differ_without_VF2'},
   'incomplete_groups':['D10','D11','D12','S4'],
   'status':'EXACT_D9_ONLY; PRIORITY_NOT_AUDITED'}
  print('SPEC-OBS-09 D9 EXACT PASS',json.dumps(result))
