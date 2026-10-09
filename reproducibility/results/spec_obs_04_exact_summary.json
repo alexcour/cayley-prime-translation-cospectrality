@@ -1,0 +1,83 @@
+{
+  "experiment": "SPEC-OBS-04",
+  "ambient_group": "Z4 x Z4",
+  "supports": {
+    "shrikhande": [
+      [
+        1,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "rook": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ]
+    ]
+  },
+  "parameters": [
+    16,
+    6,
+    2,
+    2
+  ],
+  "spectrum": {
+    "2": 6,
+    "6": 1,
+    "-2": 9
+  },
+  "equal_two_point_walk_fingerprints_all_horizons": true,
+  "cliques_4": {
+    "shrikhande": 0,
+    "rook": 8
+  },
+  "triangles_in_each_vertex_neighborhood": {
+    "shrikhande": 0,
+    "rook": 2
+  },
+  "edges_between_common_neighbors_for_each_adjacent_pair": {
+    "shrikhande": 0,
+    "rook": 1
+  },
+  "status": "known counterexample; exact finite checks; no novelty claim"
+}
