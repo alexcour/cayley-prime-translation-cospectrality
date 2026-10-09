@@ -62,5 +62,66 @@
     "D12",
     "S4"
   ],
-  "status": "EXACT_D9_ONLY; PRIORITY_NOT_AUDITED"
+  "status": "EXACT_D9_ONLY; PRIORITY_NOT_AUDITED",
+  "second_certified_witness": {
+    "S": [
+      1,
+      8,
+      9
+    ],
+    "T": [
+      9,
+      10,
+      11
+    ],
+    "same_four_motifs": true,
+    "independent_5_to_9": {
+      "5": [
+        810,
+        810
+      ],
+      "6": [
+        438,
+        438
+      ],
+      "7": [
+        126,
+        126
+      ],
+      "8": [
+        18,
+        18
+      ],
+      "9": [
+        0,
+        2
+      ]
+    },
+    "independent_9_sets_T": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    ],
+    "nonisomorphic": true,
+    "certificate": "independent_9_counts_differ_without_VF2"
+  }
 }
