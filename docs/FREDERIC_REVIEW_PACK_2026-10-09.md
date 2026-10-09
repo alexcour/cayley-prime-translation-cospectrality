@@ -2,6 +2,20 @@
 
 **État : dossier de travail pour relecture externe, non approuvé pour dépôt stable.** La PR #6 reste en brouillon ; nouveauté **N = NON AUDITÉE**. Ne pas transformer ce pack en revendication de priorité, en DOI, en dépôt HAL/arXiv, ni en fusion sans une décision explicite de franchissement des portes de publication.
 
+## Mode d'emploi pour Frédéric — coordination non scientifique
+**Information confirmée par l'auteur : Frédéric n'a pas de formation mathématique et ne doit pas être présenté comme un relecteur mathématique.** Sa mission éventuelle est exclusivement éditoriale et logistique : transmettre un dossier avec ses réserves, demander des avis à des chercheurs qualifiés, centraliser les réponses, suivre les versions et préparer matériellement une soumission lorsque l'auteur l'autorise et que les conditions éditoriales sont remplies.
+
+Frédéric n'a **pas** à certifier les preuves, refaire les calculs, affirmer l'originalité, approuver la CI ou endosser les résultats. Les six questions techniques ci-dessous sont destinées aux **relecteurs mathématiciens indépendants qu'il pourrait contacter**, pas à Frédéric lui-même.
+
+**Procédure sans connaissances mathématiques :**
+1. Partager le lien de cette branche et le manuscrit avec un mathématicien intéressé ; préciser « document de recherche non évalué, critiques et antériorités bienvenues ».
+2. Demander au destinataire un retour écrit sur des passages précis, y compris en cas de résultat faux ou déjà connu.
+3. Consigner le nom du relecteur seulement avec son accord, la date de réponse, les objections et les fichiers visés.
+4. Transmettre les retours à l'auteur pour correction et nouvelle vérification ; ne pas modifier les formules ni les preuves lui-même.
+5. Après validation explicite par l'auteur, suivre les formalités de soumission auprès de la plateforme choisie sans usurper une qualité d'auteur ou de garant scientifique. Ne jamais cliquer sur un dépôt stable par simple présence d'une CI verte.
+
+**Message introductif suggéré :** « Je coordonne la transmission d'un dossier de recherche en théorie des graphes de Cayley. Je ne suis pas mathématicien et ne me prononce pas sur la validité ou la nouveauté des résultats. Les scripts, preuves et limites sont disponibles ; une relecture critique indépendante est recherchée. »
+
 ## Lecture rapide
 - Manuscrit scientifique courant : `manuscript/structured_cayley.tex` et `manuscript/structured_cayley.pdf` (théorèmes 10A6/10C3, limites de portée à lire dans `CLAIM_BOUNDARY.md`).
 - Théorèmes et témoins : `proofs/theorem_pge5_10A6.txt`, `proofs/theorem_p3_10C3.txt`, `proofs/theorem_cyclic_injectivity_10B1.txt`.
@@ -24,7 +38,7 @@ sha256sum -c SHA256SUMS.txt
 ```
 Comparer le JSON recalculé au JSON figé : le générateur inclut les clés `second_certified_witness` et une convention de sortie qui doit rester stable ; signaler les différences de métadonnées préexistantes plutôt que forcer des fichiers identiques. Le workflow `verify` #87, sur commit ff3be2a26be6d69281ab43e3b7a434644855f808, est indiqué SUCCESS (contrôle du 9 octobre). Le job courant de CI n'exécute pas nécessairement le script SPEC-OBS-09 : un succès de CI n'est pas à lui seul un replay complet de ce module. Vérifier explicitement la commande SPEC-OBS-09 avant d'approuver.
 
-## Questions de relecture demandées
+## Questions à confier aux mathématiciens indépendants
 1. Recalculer indépendamment les 3060 quadruplets et l'égalité intégrale des motifs dirigés à quatre sommets des deux couples.
 2. Vérifier directement les deux certificats combinatoires (5/6 et 5..9), l'énumération explicite des ensembles de 9 et l'absence d'artefacts d'indexation.
 3. Auditer la partition VF2 : définition de l'isomorphisme dirigé, classes/fibres, 594, 10 et 12 ; préciser les limites de l'exhaustivité.
@@ -32,7 +46,7 @@ Comparer le JSON recalculé au JSON figé : le générateur inclut les clés `se
 5. Confronter précisément aux textes primaires Meng–Xu 1998, Huang–Chang 2001, Mans–Pappalardi–Shparlinski 2002, Brown 2009, Mönius 2020. Produire une matrice théorème / hypothèses / conclusions / intersection / antériorité.
 6. Contrôler le statut des claims, les versions de sources et la reproductibilité dans un environnement vierge.
 
-## Retour de Frédéric attendu
+## Retour scientifique attendu des relecteurs indépendants (centralisé par Frédéric)
 Pour chaque item : **confirmé / objection précise / non vérifié**, chemin source, numéro de théorème ou ligne, reproduction indépendante, référence bibliographique et conséquence éditoriale. Même une réfutation partielle est utile. Aucun endossement ne sera prêté à Frédéric sans avis explicite.
 
 ## Publication : séquence conditionnelle
