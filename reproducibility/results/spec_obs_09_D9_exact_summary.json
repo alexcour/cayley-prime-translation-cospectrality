@@ -1,0 +1,66 @@
+{
+  "experiment": "SPEC-OBS-09",
+  "prereg": "docs/SPEC_OBS_09_PREREG.md",
+  "completed_group": "D9",
+  "order": 18,
+  "supports": 594,
+  "four_motif_classes": 10,
+  "isomorphism_classes": 12,
+  "VF2_checks": 663,
+  "fibers_with_multiple_isomorphism_classes": 2,
+  "representatives": [
+    [
+      [
+        1,
+        8,
+        9
+      ],
+      [
+        9,
+        10,
+        11
+      ]
+    ],
+    [
+      [
+        1,
+        9,
+        12
+      ],
+      [
+        1,
+        9,
+        13
+      ]
+    ]
+  ],
+  "certified_witness": {
+    "S": [
+      1,
+      9,
+      12
+    ],
+    "T": [
+      1,
+      9,
+      13
+    ],
+    "same_four_motifs": true,
+    "independent_5": [
+      342,
+      360
+    ],
+    "independent_6": [
+      87,
+      129
+    ],
+    "nonisomorphic": true
+  },
+  "incomplete_groups": [
+    "D10",
+    "D11",
+    "D12",
+    "S4"
+  ],
+  "status": "EXACT_D9_ONLY; PRIORITY_NOT_AUDITED"
+}
