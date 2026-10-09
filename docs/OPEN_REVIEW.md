@@ -2,6 +2,20 @@
 
 Please help check this working preprint or identify an earlier theorem that covers all or part of it. No complete review or research-network membership is required to report a specific objection, reference or reproduction result.
 
+## Reading order
+
+| Review target | Source |
+|---|---|
+| Precise family, conventions and combined arguments | [Manuscript PDF](../manuscript/structured_cayley.pdf) · [LaTeX source](../manuscript/structured_cayley.tex) |
+| Prime translation, p >= 5 | [Witness 10A6](../proofs/theorem_pge5_10A6.txt) |
+| Ternary translation and torsion cases | [Synchronized witness 10C3](../proofs/theorem_p3_10C3.txt) |
+| Spectral injectivity in the cyclic involution family | [Witness 10B1](../proofs/theorem_cyclic_injectivity_10B1.txt) |
+| Known overlaps and unresolved priority comparisons | [Prior-art audit](../PRIOR_ART.md) |
+| Exact finite reproduction | [Verification script](../reproducibility/verify_exact.py) |
+| Scope and current publication status | [Claim boundary](../CLAIM_BOUNDARY.md) · [Release gate](RELEASE_GATE.md) |
+
+The questions below can be answered separately: mathematical correctness, coverage by earlier work, and computational reproducibility. A partial review of one implication or one reference is useful. A successful replay alone does not establish correctness of a general proof or novelty. Please cite the exact reviewed commit.
+
 ## What to check
 
 1. In the manuscript and witness 10A6: the short vanishing-sum argument, all allowed coincidences/repeated terms, the passage to a homomorphism h, and the automorphisms in the h(kappa)=1 and h(kappa)=2 cases. Check the full stated finite-abelian hypotheses, rather than only cyclic examples.
