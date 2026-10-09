@@ -24,7 +24,7 @@ S={1,9,12}, T={1,9,13}. Même histogramme intégral de motifs induits à quatre 
 | 5 | 342 | 360 |
 | 6 | 87 | 129 |
 
-Chaque nombre est préservé par isomorphisme ; ces valeurs distinctes CERTIFIENT donc que les deux graphes ne sont pas isomorphes. Il n'est pas nécessaire d'inférer cette conclusion à partir de VF2. Un deuxième exemple est disponible, mais sans certificat additionnel séparé à ce stade.
+Chaque nombre est préservé par isomorphisme ; ces valeurs distinctes CERTIFIENT donc que les deux graphes ne sont pas isomorphes. Il n'est pas nécessaire d'inférer cette conclusion à partir de VF2. Le second exemple possède désormais un certificat intrinsèque exact indépendant de VF2 : S={1,8,9}, T={9,10,11}. Leurs histogrammes complets de quatre-motifs coïncident sur les 3060 quadruplets. Pour les sous-ensembles indépendants de tailles 5, 6, 7, 8 et 9, les comptes sont respectivement S=(810,438,126,18,0) et T=(810,438,126,18,2). Les deux témoins indépendants à neuf sommets de T sont {0,1,2,3,4,5,6,7,8} et {9,10,11,12,13,14,15,16,17}. Le nombre d'ensembles indépendants de neuf sommets est invariant par isomorphisme : les graphes sont donc non isomorphes, sans VF2. Contrôle indépendant par énumération directe, distinct du script de dépôt, le 9 octobre 2026. Les deux fibres ambiguës de D9 disposent désormais d'un certificat élémentaire.
 
 ## Conséquence mathématique et limites
 
