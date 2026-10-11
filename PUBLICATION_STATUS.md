@@ -58,6 +58,7 @@ Independent human mathematical review remains OPEN.
 - Repository verification (2026-10-07): PR #1 merged at commit [`5e31912134fb6303639facedf4150d32255795bd`](https://github.com/alexcour/cayley-prime-translation-cospectrality/commit/5e31912134fb6303639facedf4150d32255795bd); [verify #4 (run 37585311793)](https://github.com/alexcour/cayley-prime-translation-cospectrality/actions/runs/37585311793) succeeded on that exact commit, with `exact-checks` and `manuscript-build` both passing.
 - Stable release (`v1.0.0`): BLOCKED until the stable-release gates are closed.
 - Zenodo: an **UNREVIEWED RESEARCH ARCHIVE / NOT PEER REVIEWED** in the `0.1.x` series MAY be prepared and deposited BEFORE external peer review, once the separate Gate Z in `docs/RELEASE_GATE.md` has passed for the precise frozen files. This reverses only the old blanket embargo on pre-review archiving; it does not create a DOI, claim priority, or authorize `v1.0.0`.
+- **Gate Z = HOLD** for a deposit: no exact archival package, final metadata, archive checksum or completed funding/competing-interest declarations are supplied by this governance PR. The repository rights/sensitivity findings and their limits are recorded in [the PR #9 documentary audit](docs/PR9_DOCUMENTARY_AUDIT_2026-10-11.md). A passing CI or PR merge does not close Gate Z.
 - HAL: DO NOT DEPOSIT in this review stage.
 - arXiv: DO NOT SUBMIT in this review stage.
 - ORCID: do not assert a Cayley archival work identifier before an eligible public identifier exists.

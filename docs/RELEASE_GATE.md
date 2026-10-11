@@ -32,9 +32,18 @@ Closing Gate R does not close any of these stable-release gates.
 
 The author's 11 October 2026 policy permits a **non-peer-reviewed work archive before human mathematical review**, for external scrutiny. Its DOI identifies the deposited bytes, not proof, originality, priority or independent review. This is NOT an automatic permission to publish an unfinished snapshot.
 
-Gate Z must be checked on the **exact frozen candidate** before upload: (1) all selected source/results/test/provenance files and commands are self-contained; (2) the SHA-256 manifest passes and exact-checks/manuscript-build succeed for the selected commit; (3) claims E/N/Q/D, prior art overlap and independent review pending are explicit; (4) no confidential FCI/patent material, personal data or third-party content without rights; (5) licences reviewed per code/text/data category, author/ORCID and AI assistance declared; (6) version, commit, DOI-ready metadata and new archive SHA-256 recorded. A failed CI or incomplete licence/sensitivity audit means **Gate Z = HOLD**, even though review is not yet available. After deposition, record only the DOI actually returned by Zenodo and preserve the initial version immutably.
+Gate Z must be checked on the **exact frozen candidate** before upload:
 
-The previous 2026-10-07 instruction `no Zenodo DOI before review` is superseded **only** for a compliant `0.1.x` non-peer-reviewed work archive. Independent review, priority checks and stable-release Gates B/C remain open.
+1. All selected source/results/test/provenance files and commands are self-contained. Original historical files still missing must remain identified as missing; current/reconstructed reproductions may be used with their provenance labels.
+2. The SHA-256 manifest passes and exact-checks/manuscript-build succeed for the selected commit. Historic CI success does not validate a changed commit or an independently assembled archive.
+3. E/N/Q and publication status, known prior-art overlap and independent review pending are explicit. Finite computational agreement is not a universal proof, a priority determination or independent human review.
+4. The selected files contain no confidential FCI/patent material, private personal data or third-party content without rights. Previously approved public author identity and cited authors' bibliographic names are distinguished from private data. Repository findings must be rechecked against the actual archive; uninspected external files are not cleared.
+5. Licences are reviewed per code/text/data category, including historical containers; third-party rights are preserved. Author/affiliation/ORCID and AI assistance are declared. Funding and competing-interest statements require the author's actual declarations; missing statements must not be replaced by assumed negatives.
+6. Version, reference commit, accurate DOI-ready metadata, selected-file manifest and new archive SHA-256 are recorded. Title/description must prominently say **UNREVIEWED RESEARCH ARCHIVE / NOT PEER REVIEWED** and obey `CLAIM_BOUNDARY.md`. No DOI is invented; record only the version DOI actually returned by Zenodo after an explicitly approved deposit, and preserve the initial archive immutably with corrections in a linked later version or erratum.
+
+A failed CI or incomplete licence/sensitivity audit means **Gate Z = HOLD**, even though review is not yet available. **Current Gate Z status: HOLD.** This PR repairs repository governance and integrity; it does not supply a frozen archival package, final metadata, archive checksum or complete funding/competing-interest declarations. See [the documentary audit](PR9_DOCUMENTARY_AUDIT_2026-10-11.md). Approval or merge of this PR is not approval of an upload, DOI creation, release or tag; no such action is part of this step.
+
+The previous 2026-10-07 instruction `no Zenodo DOI before review` is superseded **only** for a compliant `0.1.x` non-peer-reviewed work archive. Independent review, priority checks and all gates listed under **Gates still open before stable v1.0.0** remain open. The E/N/Q doctrine is defined in `docs/status_E_N_Q.md`.
 
 ## Explicitly deferred actions
 

@@ -1,5 +1,7 @@
 # Changes in 0.1.2-review
 
+Historical policy record. Current instructions are in `RELEASE_GATE.md`; the 11 October 2026 Gate Z supersedes only the blanket Zenodo embargo recorded below.
+
 - changed publication posture to `PUBLIC REVIEW / 0.1.x`;
 - kept independent mathematical review open;
 - kept general priority/antecedence status at `N = NON AUDITEE`;
