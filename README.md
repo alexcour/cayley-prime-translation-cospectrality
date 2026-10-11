@@ -70,13 +70,14 @@ Current decision:
 - **OPEN: independent human review** of 10A6/10C3 and downstream wording.
 - **OPEN: N = NON AUDITEE** for the general priority/antecedence question.
 - **NO-GO: v1.0.0 or any representation as a stable scientific release** until the stable-release gates are closed.
-- **NO-GO in this stage: Zenodo DOI, HAL deposit, arXiv submission, or equivalent archival publication workflow.**
+- **CONDITIONAL: a Zenodo `0.1.x` UNREVIEWED RESEARCH ARCHIVE / NOT PEER REVIEWED** may precede independent review only after the exact frozen archive passes Gate Z. **Gate Z is currently HOLD**; merging the governance correction does not authorize a deposit.
+- **NO-GO: stable / validated Zenodo publication, HAL deposit and arXiv submission** in this review stage.
 
 See `PUBLICATION_STATUS.md`, `CLAIM_BOUNDARY.md`, and `docs/RELEASE_GATE.md`.
 
 ## Citation and reuse warning
 
-This `0.1.x` review series is intentionally unstable. Reviewers should cite a commit hash or tag if they need a fixed reference. No DOI is assigned in this stage.
+This `0.1.x` review series is intentionally unstable. Reviewers should cite a commit hash or tag if they need a fixed reference. No Cayley DOI has been assigned by this update. Any later eligible archive identifier must refer to an explicitly unreviewed version and must not be presented as scientific validation or a priority determination.
 
 ## Author
 
@@ -94,5 +95,6 @@ The author approved these grants on 5 October 2026. Third-party rights remain wi
 This 0.1.3-review candidate derives from the Drive archive named 0.1.2, whose internal
 VERSION is 0.1.2-review. The proof files, scripts, examples and manuscript are unchanged.
 The delta restores the author-approved license policy, aligns the version, and adds
-review intake and a build check. GitHub review is allowed; stable release, Zenodo, HAL
-and arXiv remain deferred. No repository, tag, release or DOI is created by this package.
+review intake and a build check. At that preparation date, stable release, Zenodo, HAL
+and arXiv were deferred. The 11 October policy supersedes only the blanket Zenodo
+embargo, through Gate Z above. No tag, release or DOI is created by this governance update.
