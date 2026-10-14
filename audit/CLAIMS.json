@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-14",
+  "scope": "Cayley T<->T+ only",
+  "rules": {
+    "proof_status": "Internal witness is not an independent certification",
+    "priority": "Unknown unless linked primary comparisons close scope",
+    "publication": "Gate Z HOLD; no automatic release",
+    "sha256": "Raw Git repository bytes, not decoded or normalized text",
+    "failure": "Any failed check blocks audit package merge; no theorem status promotion"
+  },
+  "claims": [
+    {
+      "id": "10A6",
+      "theorem": "p>=5: cospectrality iff h iff automorphism",
+      "proof": "proofs/theorem_pge5_10A6.txt",
+      "proof_sha256": "5387ba8dc48a9794dad438104eebb3ee2fe5bcd1e5073204c925f642052ad786",
+      "internal_status": "E_INTERNAL",
+      "priority_status": "N_NON_AUDITEE",
+      "external_review": "OPEN",
+      "formal_proof": "NOT_ATTESTED",
+      "obligations": [
+        "A6-01 root-of-unity weight <=6 classification and repeated-root exclusions",
+        "A6-02 all placements of 2+z and parasite 1+2z",
+        "A6-03 subgroup Gamma closure forcing h",
+        "A6-04 maps phi+ and phi- yield automorphisms"
+      ],
+      "dependencies": [
+        "Poonen-Rubinstein 1998 Section 3 Table 1 Theorem 3"
+      ],
+      "counterexample_search": "finite exact checks in repository, not general proof"
+    },
+    {
+      "id": "10C3",
+      "theorem": "p=3: beta(Gamma)=Gamma absent 3-torsion; h criterion with 3-torsion",
+      "proof": "proofs/theorem_p3_10C3.txt",
+      "proof_sha256": "8aa1d31771c933d269d95b0c453fb3b12c7be064dfb08bb9ed30a13c9b598b52",
+      "internal_status": "E_INTERNAL",
+      "priority_status": "N_NON_AUDITEE",
+      "external_review": "OPEN",
+      "formal_proof": "NOT_ATTESTED",
+      "obligations": [
+        "C3-01 oriented chord lemma incl a=-b",
+        "C3-02 exhaustive L/R matching incl zero values",
+        "C3-03 K=Gamma cap beta(Gamma), quotient order 3",
+        "C3-04 equality of final two coset multisets",
+        "C3-05 beta branch implies h in torsion case"
+      ],
+      "dependencies": [
+        "Internal 10C1/10C2"
+      ],
+      "counterexample_search": "finite HNF checks in repository, not general proof"
+    },
+    {
+      "id": "10B1",
+      "theorem": "cyclic even k, 3 does not divide k: mu to adjacency spectrum injective on involutions",
+      "proof": "proofs/theorem_cyclic_injectivity_10B1.txt",
+      "proof_sha256": "77c45ba8c1bc6fbc50beb43614d71392d9d7f4c3fbda52f36d795bf258a5e33f",
+      "internal_status": "E_INTERNAL",
+      "priority_status": "N_NON_AUDITEE",
+      "external_review": "OPEN",
+      "formal_proof": "NOT_ATTESTED",
+      "obligations": [
+        "B1-01 spectral modulus invariants and multiplicities",
+        "B1-02 extraction of involution data from spectrum",
+        "B1-03 residual coset separation",
+        "B1-04 geometric contradiction valid for all even k"
+      ],
+      "dependencies": [
+        "Previous cyclic spectrum lemmas"
+      ],
+      "counterexample_search": "historical inject.py finite check, not general proof"
+    }
+  ]
+}
