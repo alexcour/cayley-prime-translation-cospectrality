@@ -20,6 +20,13 @@ jobs:
           python3 -m json.tool reproducibility/results/mixed_review_new.json >/dev/null
           python3 -m json.tool reproducibility/results/p3_120_review_new.json >/dev/null
           python3 -m json.tool reproducibility/results/pge5_416_review_new.json >/dev/null
+      # The checksum manifest describes the branch snapshot, not GitHub's synthetic PR merge.
+      # Keep all preceding scientific checks on the merge checkout.
+      - name: Restore PR source snapshot for manifest
+        if: github.event_name == 'pull_request'
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
       - name: Check manifest
         run: sha256sum -c SHA256SUMS.txt
 

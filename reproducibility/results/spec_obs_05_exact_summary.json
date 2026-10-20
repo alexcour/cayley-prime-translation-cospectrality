@@ -1,0 +1,52 @@
+{
+  "test": "SPEC-OBS-05",
+  "WL": {
+    "2_WL": [
+      [
+        0,
+        3,
+        3,
+        false
+      ]
+    ],
+    "2_FWL": [
+      [
+        0,
+        3,
+        3,
+        false
+      ]
+    ],
+    "3_WL": [
+      [
+        0,
+        15,
+        15,
+        false
+      ]
+    ],
+    "3_FWL": [
+      [
+        0,
+        15,
+        15,
+        false
+      ],
+      [
+        1,
+        15,
+        22,
+        true
+      ]
+    ]
+  },
+  "triangle_extensions_rook": {
+    "1": 32
+  },
+  "triangle_extensions_shrikhande": {
+    "0": 32
+  },
+  "K4_rook": 8,
+  "K4_shrikhande": 0,
+  "novelty": "known antecedent"
+}
