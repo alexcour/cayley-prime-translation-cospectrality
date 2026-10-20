@@ -41,3 +41,13 @@ Exact integer cyclotomic tests: 63 ambient orders N=1..60,72,90,120, total 1,081
 Review needed: verify necessity permutations and identity of Gamma over composite/even n; run an independent implementation; establish earlier literature; check differences from the separately treated n=3 case. The original manuscript already excluded a weight-five minimal vanishing component; an abbreviated correspondence omitted that detail.
 
 Reference: B. Poonen and M. Rubinstein, *The Number of Intersection Points Made by the Diagonals of a Regular Polygon*, SIAM J. Discrete Math. 11 (1998), 133–156, DOI: 10.1137/S0895480195281246.
+
+## Separate audit added on 20 October 2026
+
+The complete independent computational audit and expanded proof are in
+[CYCLIC_N_INDEPENDENT_AUDIT_2026-10-20.md](CYCLIC_N_INDEPENDENT_AUDIT_2026-10-20.md).
+It supplies both matching tables, the relation-based composite-order argument,
+inverse automorphisms, an essential missing-generation counterexample, and
+integer-walk checks independent of the earlier character-spectrum script.
+The earlier text above is retained as the audited source. The reference's correct
+pagination is 135–156. All work remains DRAFT; external review and priority are open.
