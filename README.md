@@ -3,8 +3,10 @@
 <!-- research-vision-20261016 -->
 > **Research programme and ambitions · 16 October 2026**  
 > [Présentation en français](https://github.com/alexcour/couret-finite-verifications/blob/main/RESEARCH_VISION_FR.md) · [Research vision in English](https://github.com/alexcour/couret-finite-verifications/blob/main/RESEARCH_VISION_EN.md)  
-> Our research dream is to turn a result into reasoning that can be recovered, tested and passed on. Spectral ambiguities form one mathematical branch of this wider research programme. The presentation distinguishes existing work, proposed experiments and research dreams. This repository retains its own claim and review boundaries.
+> The aim of this programme is to make results recoverable, testable and transferable. Spectral ambiguities form one mathematical branch of this wider research programme. The presentation distinguishes existing work, proposed experiments and research dreams. This repository retains its own claim and review boundaries.
 <!-- /research-vision-20261016 -->
+
+> **Authorship clarification · 20 October 2026.** Alexandre Couret is the author responsible for this programme. First-person plural wording in the linked research vision refers to his workflow with AI assistants; it does not designate a team of human coauthors or an independent validation. AI systems are assistance tools, not authors.
 
 **Review status: PUBLIC REVIEW / 0.1.x. Current package: 0.1.3-review (2026-10-06). This is an unstable review snapshot, not a stable scientific release.**
 
