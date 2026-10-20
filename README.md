@@ -1,11 +1,5 @@
 # Cospectrality of a structured three-element support under prime cyclic translation
 
-<!-- research-vision-20261016 -->
-> **Research programme and ambitions · 16 October 2026**  
-> [Présentation en français](https://github.com/alexcour/couret-finite-verifications/blob/main/RESEARCH_VISION_FR.md) · [Research vision in English](https://github.com/alexcour/couret-finite-verifications/blob/main/RESEARCH_VISION_EN.md)  
-> Our research dream is to turn a result into reasoning that can be recovered, tested and passed on. Spectral ambiguities form one mathematical branch of this wider research programme. The presentation distinguishes existing work, proposed experiments and research dreams. This repository retains its own claim and review boundaries.
-<!-- /research-vision-20261016 -->
-
 **Review status: PUBLIC REVIEW / 0.1.x. Current package: 0.1.3-review (2026-10-06). This is an unstable review snapshot, not a stable scientific release.**
 
 This repository is public for external review and provides a dated, inspectable record of the current work on the structured support-translation family
@@ -102,3 +96,7 @@ VERSION is 0.1.2-review. The proof files, scripts, examples and manuscript are u
 The delta restores the author-approved license policy, aligns the version, and adds
 review intake and a build check. GitHub review is allowed; stable release, Zenodo, HAL
 and arXiv remain deferred. No repository, tag, release or DOI is created by this package.
+
+## Programme context
+
+[Présentation du programme en français](https://github.com/alexcour/couret-finite-verifications/blob/main/RESEARCH_VISION_FR.md) · [Programme overview in English](https://github.com/alexcour/couret-finite-verifications/blob/main/RESEARCH_VISION_EN.md). The scope, review status and version of this repository are specified above.
