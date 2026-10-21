@@ -1,0 +1,67 @@
+
+Usage: shortg [-qvkdu] [-i# -I#:# -K#] [-fxxx] [-S|-t] [-Tdir] [-Z#] [infile [outfile]]
+
+  Remove isomorphs from a file of graphs.
+
+    If outfile is omitted, it is taken to be the same as infile
+    If both infile and outfile are omitted, input will be taken
+            from stdin and written to stdout
+
+    The output file has a header if and only if the input file does.
+
+    -s  force output to sparse6 format
+    -g  force output to graph6 format
+    -z  force output to digraph6 format
+        If none of -s, -z, -g are given, the output format is determined
+        by the header or, if there is none, by the format of the first
+        input graph. The output format determines the sorting order too.
+        As an exception, digraphs are always written in digraph6 format.
+    -S  Use sparse representation internally. Note that this changes the
+        canonical labelling. 
+        Multiple edges are not supported.  One loop per vertex is ok.
+    -t  Use Traces.
+        Note that this changes the canonical labelling.
+        Multiple edges,loops, directed edges are not supported,
+        nor invariants.
+
+    -k  output graphs have the same labelling and format as the inputs.
+        Without -k, output graphs have canonical labelling.
+        -s, -g, -z are ineffective if -k is given.
+
+    -v  write to stderr a list of which input graphs correspond to which
+        output graphs. The input and output graphs are both numbered
+        beginning at 1.  A line like
+           23 : 30 154 78
+        means that inputs 30, 154 and 78 were isomorphic, and produced
+        output 23.
+
+    -d  include in the output only those inputs which are isomorphic
+        to another input.  If -k is specified, all such inputs are
+        included in their original labelling.  Without -k, only one
+        member of each nontrivial isomorphism class is written,
+        with canonical labelling.
+
+    -fxxx  Specify a partition of the point set.  xxx is any
+        string of ASCII characters except nul.  This string is
+        considered extended to infinity on the right with the
+        character 'z'.  One character is associated with each point,
+        in the order given.  The labelling used obeys these rules:
+         (1) the new order of the points is such that the associated
+        characters are in ASCII ascending order
+         (2) if two graphs are labelled using the same string xxx,
+        the output graphs are identical iff there is an
+        associated-character-preserving isomorphism between them.
+    -i#  select an invariant (1 = twopaths, 2 = adjtriang(K), 3 = triples,
+        4 = quadruples, 5 = celltrips, 6 = cellquads, 7 = cellquins,
+        8 = distances(K), 9 = indsets(K), 10 = cliques(K), 11 = cellcliq(K),
+       12 = cellind(K), 13 = adjacencies, 14 = cellfano, 15 = cellfano2,
+       16 = refinvar(K))
+    -I#:#  select mininvarlevel and maxinvarlevel (default 1:1)
+    -K#   select invararg (default 3)
+
+    -u  Write no output, just report how many graphs it would have output.
+        In this case, outfile is not permitted.
+    -Tdir  Specify that directory "dir" will be used for temporary disk
+        space by the sort subprocess.  The default is usually /tmp.
+    -Z# Specify memory for sorting (number followed by %,K,M, or G)
+    -q  Suppress auxiliary output

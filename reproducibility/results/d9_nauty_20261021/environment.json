@@ -1,0 +1,24 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "executables": {
+    "shortg": {
+      "path": "/tmp/nauty-root/usr/bin/nauty-shortg",
+      "sha256": "0fc5e1bfb740483b3bbf0d94dc8e77a62e5485593756f9ba819dcc0fad971be9"
+    },
+    "labelg": {
+      "path": "/tmp/nauty-root/usr/bin/nauty-labelg",
+      "sha256": "96e973e3a13442c6f626012b6b1059ef88e750aff284be6bfc6cd77ee7f185bf"
+    },
+    "amtog": {
+      "path": "/tmp/nauty-root/usr/bin/nauty-amtog",
+      "sha256": "a29b4f99412d646423495542145e649f942c3edcbd63ea1057796c29dcc0dc06"
+    },
+    "listg": {
+      "path": "/tmp/nauty-root/usr/bin/nauty-listg",
+      "sha256": "6464c3a6ba82a74b94ae2b31f4876398934c1d9718e3882fcc68e66bd2823806"
+    }
+  },
+  "LD_LIBRARY_PATH": "/tmp/nauty-root/usr/lib/x86_64-linux-gnu:/tmp/nauty-root/usr/lib",
+  "networkx_used": false
+}

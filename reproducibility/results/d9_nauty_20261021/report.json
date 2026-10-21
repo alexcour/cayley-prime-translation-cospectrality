@@ -1,0 +1,85 @@
+{
+  "source_commit": "89d2709f03bc003b97ebb36765786935b97de0a3",
+  "source_files_sha256": {
+    "reproducibility/verify_spec_obs_09.py": "e8c1ca53872bf141241ea9ea2b9628184cdb66621704304b33fb340ae12e35aa",
+    "reproducibility/results/spec_obs_09_D9_exact_summary.json": "798170f8941f03a6a7be36f6ca3c065d2ce1e7ac3ad2d2e478047e9092510993",
+    "reproducibility/verify_d9_nauty.py": "0407fa7cd2e9c402b6e577e5c1ebba3ca72004476f4b5b5c6d00294f2f7c4af0"
+  },
+  "graphs": 594,
+  "nauty_classes": 12,
+  "class_sizes": [
+    54,
+    54,
+    54,
+    54,
+    27,
+    54,
+    54,
+    54,
+    54,
+    54,
+    27,
+    54
+  ],
+  "vf2_archived_classes": 12,
+  "vf2_archived_checks": 663,
+  "vf2_rerun": false,
+  "aggregate_count_agrees": true,
+  "motif_classes": 10,
+  "motif_fibers_split_by_nauty": 2,
+  "full_vf2_partition_comparison": {
+    "status": "UNAVAILABLE_ARCHIVED_VF2_MEMBERSHIPS",
+    "reason": "Frozen JSON stores aggregate counts and four witness supports only; no full partition. VF2 was not rerun."
+  },
+  "archived_witnesses": [
+    {
+      "supports": [
+        [
+          1,
+          8,
+          9
+        ],
+        [
+          9,
+          10,
+          11
+        ]
+      ],
+      "nauty_classes": [
+        "N05",
+        "N11"
+      ],
+      "distinct": true
+    },
+    {
+      "supports": [
+        [
+          1,
+          9,
+          12
+        ],
+        [
+          1,
+          9,
+          13
+        ]
+      ],
+      "nauty_classes": [
+        "N08",
+        "N09"
+      ],
+      "distinct": true
+    }
+  ],
+  "checks": {
+    "source_corpus_all_matrices_equal": true,
+    "amtog_byte_equality": true,
+    "listg_all_matrices_equal": true,
+    "rooted_unrooted_partitions_equal": true,
+    "all_594_relabellings_equal": true,
+    "shortg_keeps_original_labels": true,
+    "shortg_verbose_partitions_equal_labelg": true,
+    "asymmetric_direction_control_separated": true
+  },
+  "scope": "Finite D9 computation only; not a general proof or global endorsement by McKay."
+}

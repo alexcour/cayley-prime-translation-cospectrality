@@ -1,0 +1,114 @@
+[
+  {
+    "representative": [
+      1,
+      2,
+      9
+    ],
+    "supports": 54,
+    "nauty_classes": [
+      "N01"
+    ]
+  },
+  {
+    "representative": [
+      1,
+      3,
+      9
+    ],
+    "supports": 54,
+    "nauty_classes": [
+      "N02"
+    ]
+  },
+  {
+    "representative": [
+      1,
+      4,
+      9
+    ],
+    "supports": 54,
+    "nauty_classes": [
+      "N03"
+    ]
+  },
+  {
+    "representative": [
+      1,
+      6,
+      9
+    ],
+    "supports": 54,
+    "nauty_classes": [
+      "N04"
+    ]
+  },
+  {
+    "representative": [
+      1,
+      8,
+      9
+    ],
+    "supports": 54,
+    "nauty_classes": [
+      "N05",
+      "N11"
+    ]
+  },
+  {
+    "representative": [
+      1,
+      9,
+      10
+    ],
+    "supports": 54,
+    "nauty_classes": [
+      "N06"
+    ]
+  },
+  {
+    "representative": [
+      1,
+      9,
+      11
+    ],
+    "supports": 54,
+    "nauty_classes": [
+      "N07"
+    ]
+  },
+  {
+    "representative": [
+      1,
+      9,
+      12
+    ],
+    "supports": 108,
+    "nauty_classes": [
+      "N08",
+      "N09"
+    ]
+  },
+  {
+    "representative": [
+      3,
+      9,
+      10
+    ],
+    "supports": 54,
+    "nauty_classes": [
+      "N10"
+    ]
+  },
+  {
+    "representative": [
+      9,
+      10,
+      12
+    ],
+    "supports": 54,
+    "nauty_classes": [
+      "N12"
+    ]
+  }
+]

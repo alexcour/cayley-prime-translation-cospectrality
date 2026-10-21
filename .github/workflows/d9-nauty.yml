@@ -1,0 +1,47 @@
+name: D9 independent nauty replay
+
+on:
+  push:
+    branches: [research/d9-nauty-independent-20261021]
+  pull_request:
+    paths:
+      - '.github/workflows/d9-nauty.yml'
+      - 'reproducibility/verify_d9_nauty.py'
+      - 'reproducibility/verify_spec_obs_09.py'
+      - 'reproducibility/results/d9_nauty_20261021/**'
+      - 'reproducibility/results/spec_obs_09_D9_exact_summary.json'
+
+permissions:
+  contents: read
+
+jobs:
+  d9-nauty:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Install directed graph tools
+        run: sudo apt-get update && sudo apt-get install -y nauty=2.8.8+ds-5
+      - name: Replay nauty only; VF2 is never invoked
+        run: python3 reproducibility/verify_d9_nauty.py --out /tmp/d9-nauty
+      - name: Compare replay against archived nauty partition
+        run: |
+          python3 - <<'PY'
+          import importlib.util
+          from pathlib import Path
+          s = importlib.util.spec_from_file_location('d9', 'reproducibility/verify_d9_nauty.py')
+          d9 = importlib.util.module_from_spec(s)
+          s.loader.exec_module(d9)
+          supports, _ = d9.corpus()
+          archived = d9.read_reference(Path('reproducibility/results/d9_nauty_20261021/nauty_partition.csv'), supports)
+          replay = d9.read_reference(Path('/tmp/d9-nauty/nauty_partition.csv'), supports)
+          result = d9.compare_partitions(archived, replay)
+          assert result['equal'], result
+          print('Archived nauty / fresh nauty partition equality: PASS (not a VF2 comparison)')
+          PY
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        if: always()
+        with:
+          name: d9-nauty-replay
+          path: /tmp/d9-nauty
+          if-no-files-found: error
