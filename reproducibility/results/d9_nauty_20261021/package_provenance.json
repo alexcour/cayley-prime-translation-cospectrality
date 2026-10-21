@@ -1,0 +1,43 @@
+{
+  "commands": [
+    "apt-get -o APT::Sandbox::User=root update -qq",
+    "apt-get -o APT::Sandbox::User=root download nauty",
+    "apt-get -o APT::Sandbox::User=root download libnauty-2.8.8",
+    "apt-get -o APT::Sandbox::User=root download libcliquer1",
+    "dpkg-deb -x <each.deb> /tmp/nauty-root",
+    "PATH=/tmp/nauty-root/usr/bin:$PATH LD_LIBRARY_PATH=/tmp/nauty-root/usr/lib/x86_64-linux-gnu:/tmp/nauty-root/usr/lib python3 reproducibility/verify_d9_nauty.py --out reproducibility/results/d9_nauty_20261021"
+  ],
+  "packages": [
+    {
+      "file": "libcliquer1_1.21-3build1_amd64.deb",
+      "package": "Package: libcliquer1",
+      "version": "Version: 1.21-3build1",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260828T000000Z/pool/universe/c/cliquer/libcliquer1_1.21-3build1_amd64.deb",
+      "sha256": "a347c29cc8c8652dd8c868870f785f3b4b66550fd9418b5830738cd586d90d11"
+    },
+    {
+      "file": "libnauty-2.8.8_2.8.8+ds-5_amd64.deb",
+      "package": "Package: libnauty-2.8.8",
+      "version": "Version: 2.8.8+ds-5",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260828T000000Z/pool/universe/n/nauty/libnauty-2.8.8_2.8.8+ds-5_amd64.deb",
+      "sha256": "36d641b51b74049c4f7ec0657f6bb4e21838e3af51e423b2e5fd11ff541bf487"
+    },
+    {
+      "file": "nauty_2.8.8+ds-5_amd64.deb",
+      "package": "Package: nauty",
+      "version": "Version: 2.8.8+ds-5",
+      "url": "https://snapshot.ubuntu.com/ubuntu/20260828T000000Z/pool/universe/n/nauty/nauty_2.8.8+ds-5_amd64.deb",
+      "sha256": "d3414a59e450372b4b9f2d424e565dc3aa7e40cbc7e04c483d0b472d307739c3"
+    }
+  ],
+  "extracted_libraries": [
+    {
+      "path": "/tmp/nauty-root/usr/lib/x86_64-linux-gnu/libnauty-2.8.8.so",
+      "sha256": "007946d13023dcad7e78e9c5142e792fe31198590da29d595a883b537c54753a"
+    },
+    {
+      "path": "/tmp/nauty-root/usr/lib/libcliquer.so.1",
+      "sha256": "b1ccfac9465a0fc084b505d7415a8322da285705aaeb4f8f33f32cf926249c4e"
+    }
+  ]
+}

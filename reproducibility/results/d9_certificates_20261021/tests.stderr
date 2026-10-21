@@ -1,0 +1,14 @@
+test_bareiss_row_swap_and_singular (__main__.CorruptionTests.test_bareiss_row_swap_and_singular) ... ok
+test_bijective_wrong_graph_map (__main__.CorruptionTests.test_bijective_wrong_graph_map) ... ok
+test_duplicate_support (__main__.CorruptionTests.test_duplicate_support) ... ok
+test_false_pair_certificate (__main__.CorruptionTests.test_false_pair_certificate) ... ok
+test_missing_member (__main__.CorruptionTests.test_missing_member) ... ok
+test_motif_corruption (__main__.CorruptionTests.test_motif_corruption) ... ok
+test_nonpermutation (__main__.CorruptionTests.test_nonpermutation) ... ok
+test_polynomial_corruption (__main__.CorruptionTests.test_polynomial_corruption) ... ok
+test_trace_corruption (__main__.CorruptionTests.test_trace_corruption) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 1.445s
+
+OK

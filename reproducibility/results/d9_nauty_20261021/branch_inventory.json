@@ -1,0 +1,18 @@
+[
+  "refs/remotes/origin/HEAD fb98c92fdb69a99e8030b6c69bb6d133b4316df5",
+  "refs/remotes/origin/audit/2026-10-20-pdf-authorship fb94b336295798402c88f0ec8c23e50f9858d67f",
+  "refs/remotes/origin/audit/cayley-manifest-zenodo-prereview-2026-10-11 5b5da644038452e9e6cce598b6703e713550e2a9",
+  "refs/remotes/origin/audit/claim-evidence-contract-v1-20261014 e1098e4fb93a99b86f2d98a4c154a6bb2b688e57",
+  "refs/remotes/origin/audit/qin-erratum-meng-primary-20261014 fda4f72c47fd8bafbc9c75bbbc8b63889e82a005",
+  "refs/remotes/origin/audit/readme-scope-20261020 8b95710f9dfd0a9ced3c8435377ff7fd127be703",
+  "refs/remotes/origin/ci/verify-node24-ubuntu2404 f172dfa10bd645a12fc26105be724b68ff33af8c",
+  "refs/remotes/origin/docs/moenius-2020-overlap-2026-10-07 34fcfb421cec956d87c7e8d7944d01319abd6e3e",
+  "refs/remotes/origin/docs/prior-art-reconcile-2026-10-07 a8254d9f56ba7a948373cfcc84af411fb2cdc6d7",
+  "refs/remotes/origin/docs/public-review-verified-status 6385b26b7f361059bd8b96608cfa6475717473a5",
+  "refs/remotes/origin/main fb98c92fdb69a99e8030b6c69bb6d133b4316df5",
+  "refs/remotes/origin/prep/gate-z-0.1.3-unreviewed-archive-2026-10-12 32314a42a4070c8723085f8c666598ab4d5b2b80",
+  "refs/remotes/origin/research/cayley-cn-shortroot-20261020 02c0ac48d5bcd698d59dfb2c4f4e512594a82e78",
+  "refs/remotes/origin/research/spec-obs-01-rooted-observations 89d2709f03bc003b97ebb36765786935b97de0a3",
+  "refs/remotes/origin/review/frederic-cayley-pack-2026-10-09 f0b740f0ce604ba15d3797d8c8c8ad285e267aa2",
+  "refs/remotes/origin/review/independent-replay-intake-2026-10-09 3e8a171bbd792dcfc3adf9237288951414dcb5d6"
+]

@@ -1,0 +1,164 @@
+[
+  {
+    "argv": [
+      "/tmp/nauty-root/usr/bin/nauty-shortg",
+      "--help"
+    ],
+    "returncode": 0,
+    "stdout": "shortg-help.stdout",
+    "stderr": "shortg-help.stderr"
+  },
+  {
+    "argv": [
+      "/tmp/nauty-root/usr/bin/nauty-shortg",
+      "--version"
+    ],
+    "returncode": 0,
+    "stdout": "shortg-version.stdout",
+    "stderr": "shortg-version.stderr"
+  },
+  {
+    "argv": [
+      "/tmp/nauty-root/usr/bin/nauty-labelg",
+      "--help"
+    ],
+    "returncode": 0,
+    "stdout": "labelg-help.stdout",
+    "stderr": "labelg-help.stderr"
+  },
+  {
+    "argv": [
+      "/tmp/nauty-root/usr/bin/nauty-labelg",
+      "--version"
+    ],
+    "returncode": 0,
+    "stdout": "labelg-version.stdout",
+    "stderr": "labelg-version.stderr"
+  },
+  {
+    "argv": [
+      "/tmp/nauty-root/usr/bin/nauty-amtog",
+      "--help"
+    ],
+    "returncode": 0,
+    "stdout": "amtog-help.stdout",
+    "stderr": "amtog-help.stderr"
+  },
+  {
+    "argv": [
+      "/tmp/nauty-root/usr/bin/nauty-amtog",
+      "--version"
+    ],
+    "returncode": 0,
+    "stdout": "amtog-version.stdout",
+    "stderr": "amtog-version.stderr"
+  },
+  {
+    "argv": [
+      "/tmp/nauty-root/usr/bin/nauty-listg",
+      "--help"
+    ],
+    "returncode": 0,
+    "stdout": "listg-help.stdout",
+    "stderr": "listg-help.stderr"
+  },
+  {
+    "argv": [
+      "/tmp/nauty-root/usr/bin/nauty-listg",
+      "--version"
+    ],
+    "returncode": 0,
+    "stdout": "listg-version.stdout",
+    "stderr": "listg-version.stderr"
+  },
+  {
+    "argv": [
+      "/tmp/nauty-root/usr/bin/nauty-shortg",
+      "-k",
+      "/workspace/scratch/1dfd358e280b/cayley/reproducibility/results/d9_nauty_20261021/direction-control.d6",
+      "/workspace/scratch/1dfd358e280b/cayley/reproducibility/results/d9_nauty_20261021/direction-control-representatives.d6"
+    ],
+    "returncode": 0,
+    "stdout": "shortg-direction-control.stdout",
+    "stderr": "shortg-direction-control.stderr"
+  },
+  {
+    "argv": [
+      "/tmp/nauty-root/usr/bin/nauty-amtog",
+      "-z",
+      "/workspace/scratch/1dfd358e280b/cayley/reproducibility/results/d9_nauty_20261021/corpus.am",
+      "/workspace/scratch/1dfd358e280b/cayley/reproducibility/results/d9_nauty_20261021/amtog.d6"
+    ],
+    "returncode": 0,
+    "stdout": "amtog-corpus.stdout",
+    "stderr": "amtog-corpus.stderr"
+  },
+  {
+    "argv": [
+      "/tmp/nauty-root/usr/bin/nauty-listg",
+      "-A",
+      "/workspace/scratch/1dfd358e280b/cayley/reproducibility/results/d9_nauty_20261021/corpus.d6",
+      "/workspace/scratch/1dfd358e280b/cayley/reproducibility/results/d9_nauty_20261021/listg.am"
+    ],
+    "returncode": 0,
+    "stdout": "listg-corpus.stdout",
+    "stderr": "listg-corpus.stderr"
+  },
+  {
+    "argv": [
+      "/tmp/nauty-root/usr/bin/nauty-shortg",
+      "-fa",
+      "-k",
+      "-v",
+      "/workspace/scratch/1dfd358e280b/cayley/reproducibility/results/d9_nauty_20261021/corpus.d6",
+      "/workspace/scratch/1dfd358e280b/cayley/reproducibility/results/d9_nauty_20261021/rooted-representatives.d6"
+    ],
+    "returncode": 0,
+    "stdout": "shortg-rooted.stdout",
+    "stderr": "shortg-rooted.stderr"
+  },
+  {
+    "argv": [
+      "/tmp/nauty-root/usr/bin/nauty-shortg",
+      "-k",
+      "-v",
+      "/workspace/scratch/1dfd358e280b/cayley/reproducibility/results/d9_nauty_20261021/corpus.d6",
+      "/workspace/scratch/1dfd358e280b/cayley/reproducibility/results/d9_nauty_20261021/unrooted-representatives.d6"
+    ],
+    "returncode": 0,
+    "stdout": "shortg-unrooted.stdout",
+    "stderr": "shortg-unrooted.stderr"
+  },
+  {
+    "argv": [
+      "/tmp/nauty-root/usr/bin/nauty-labelg",
+      "-fa",
+      "/workspace/scratch/1dfd358e280b/cayley/reproducibility/results/d9_nauty_20261021/corpus.d6",
+      "/workspace/scratch/1dfd358e280b/cayley/reproducibility/results/d9_nauty_20261021/rooted-canonical.d6"
+    ],
+    "returncode": 0,
+    "stdout": "labelg-rooted.stdout",
+    "stderr": "labelg-rooted.stderr"
+  },
+  {
+    "argv": [
+      "/tmp/nauty-root/usr/bin/nauty-labelg",
+      "/workspace/scratch/1dfd358e280b/cayley/reproducibility/results/d9_nauty_20261021/corpus.d6",
+      "/workspace/scratch/1dfd358e280b/cayley/reproducibility/results/d9_nauty_20261021/unrooted-canonical.d6"
+    ],
+    "returncode": 0,
+    "stdout": "labelg-unrooted.stdout",
+    "stderr": "labelg-unrooted.stderr"
+  },
+  {
+    "argv": [
+      "/tmp/nauty-root/usr/bin/nauty-labelg",
+      "-fa",
+      "/workspace/scratch/1dfd358e280b/cayley/reproducibility/results/d9_nauty_20261021/relabelled.d6",
+      "/workspace/scratch/1dfd358e280b/cayley/reproducibility/results/d9_nauty_20261021/relabelled-canonical.d6"
+    ],
+    "returncode": 0,
+    "stdout": "labelg-relabelled.stdout",
+    "stderr": "labelg-relabelled.stderr"
+  }
+]
