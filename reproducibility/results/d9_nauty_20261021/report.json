@@ -3,7 +3,7 @@
   "source_files_sha256": {
     "reproducibility/verify_spec_obs_09.py": "e8c1ca53872bf141241ea9ea2b9628184cdb66621704304b33fb340ae12e35aa",
     "reproducibility/results/spec_obs_09_D9_exact_summary.json": "798170f8941f03a6a7be36f6ca3c065d2ce1e7ac3ad2d2e478047e9092510993",
-    "reproducibility/verify_d9_nauty.py": "0407fa7cd2e9c402b6e577e5c1ebba3ca72004476f4b5b5c6d00294f2f7c4af0"
+    "reproducibility/verify_d9_nauty.py": "a6af4ac345e6f316149e60181968142916103b2264fa3973e836e34ce957c0d9"
   },
   "graphs": 594,
   "nauty_classes": 12,

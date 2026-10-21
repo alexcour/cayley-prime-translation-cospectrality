@@ -81,5 +81,84 @@
     "returncode": 0,
     "stdout": "shortg-direction-control.stdout",
     "stderr": "shortg-direction-control.stderr"
+  },
+  {
+    "argv": [
+      "/tmp/nauty-root/usr/bin/nauty-amtog",
+      "-z",
+      "/workspace/scratch/1dfd358e280b/cayley/reproducibility/results/d9_nauty_20261021/corpus.am",
+      "/workspace/scratch/1dfd358e280b/cayley/reproducibility/results/d9_nauty_20261021/amtog.d6"
+    ],
+    "returncode": 0,
+    "stdout": "amtog-corpus.stdout",
+    "stderr": "amtog-corpus.stderr"
+  },
+  {
+    "argv": [
+      "/tmp/nauty-root/usr/bin/nauty-listg",
+      "-A",
+      "/workspace/scratch/1dfd358e280b/cayley/reproducibility/results/d9_nauty_20261021/corpus.d6",
+      "/workspace/scratch/1dfd358e280b/cayley/reproducibility/results/d9_nauty_20261021/listg.am"
+    ],
+    "returncode": 0,
+    "stdout": "listg-corpus.stdout",
+    "stderr": "listg-corpus.stderr"
+  },
+  {
+    "argv": [
+      "/tmp/nauty-root/usr/bin/nauty-shortg",
+      "-fa",
+      "-k",
+      "-v",
+      "/workspace/scratch/1dfd358e280b/cayley/reproducibility/results/d9_nauty_20261021/corpus.d6",
+      "/workspace/scratch/1dfd358e280b/cayley/reproducibility/results/d9_nauty_20261021/rooted-representatives.d6"
+    ],
+    "returncode": 0,
+    "stdout": "shortg-rooted.stdout",
+    "stderr": "shortg-rooted.stderr"
+  },
+  {
+    "argv": [
+      "/tmp/nauty-root/usr/bin/nauty-shortg",
+      "-k",
+      "-v",
+      "/workspace/scratch/1dfd358e280b/cayley/reproducibility/results/d9_nauty_20261021/corpus.d6",
+      "/workspace/scratch/1dfd358e280b/cayley/reproducibility/results/d9_nauty_20261021/unrooted-representatives.d6"
+    ],
+    "returncode": 0,
+    "stdout": "shortg-unrooted.stdout",
+    "stderr": "shortg-unrooted.stderr"
+  },
+  {
+    "argv": [
+      "/tmp/nauty-root/usr/bin/nauty-labelg",
+      "-fa",
+      "/workspace/scratch/1dfd358e280b/cayley/reproducibility/results/d9_nauty_20261021/corpus.d6",
+      "/workspace/scratch/1dfd358e280b/cayley/reproducibility/results/d9_nauty_20261021/rooted-canonical.d6"
+    ],
+    "returncode": 0,
+    "stdout": "labelg-rooted.stdout",
+    "stderr": "labelg-rooted.stderr"
+  },
+  {
+    "argv": [
+      "/tmp/nauty-root/usr/bin/nauty-labelg",
+      "/workspace/scratch/1dfd358e280b/cayley/reproducibility/results/d9_nauty_20261021/corpus.d6",
+      "/workspace/scratch/1dfd358e280b/cayley/reproducibility/results/d9_nauty_20261021/unrooted-canonical.d6"
+    ],
+    "returncode": 0,
+    "stdout": "labelg-unrooted.stdout",
+    "stderr": "labelg-unrooted.stderr"
+  },
+  {
+    "argv": [
+      "/tmp/nauty-root/usr/bin/nauty-labelg",
+      "-fa",
+      "/workspace/scratch/1dfd358e280b/cayley/reproducibility/results/d9_nauty_20261021/relabelled.d6",
+      "/workspace/scratch/1dfd358e280b/cayley/reproducibility/results/d9_nauty_20261021/relabelled-canonical.d6"
+    ],
+    "returncode": 0,
+    "stdout": "labelg-relabelled.stdout",
+    "stderr": "labelg-relabelled.stderr"
   }
 ]

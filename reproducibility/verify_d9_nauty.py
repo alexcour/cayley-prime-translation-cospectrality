@@ -254,7 +254,7 @@ def main():
         for i in members:
             labels[i] = f'N{c:02d}'
     stream = io.StringIO()
-    writer = csv.writer(stream)
+    writer = csv.writer(stream, lineterminator='\n')
     writer.writerow(['support', 'class', 'input_line', 'canonical_sha256'])
     for i, (s, label, canonical) in enumerate(zip(supports, labels, plain), 1):
         writer.writerow([','.join(map(str, s)), label, i,
