@@ -1,4 +1,4 @@
-name: D9 independent nauty replay
+name: D9 nauty replay and explicit certificates
 
 on:
   push:
@@ -8,6 +8,10 @@ on:
       - '.github/workflows/d9-nauty.yml'
       - 'reproducibility/verify_d9_nauty.py'
       - 'reproducibility/verify_spec_obs_09.py'
+      - 'reproducibility/build_d9_certificates.py'
+      - 'reproducibility/check_d9_certificates.py'
+      - 'reproducibility/test_d9_certificates.py'
+      - 'reproducibility/results/d9_certificates_20261021/**'
       - 'reproducibility/results/d9_nauty_20261021/**'
       - 'reproducibility/results/spec_obs_09_D9_exact_summary.json'
 
@@ -15,6 +19,22 @@ permissions:
   contents: read
 
 jobs:
+  d9-certificates:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Check finite certificates with isolated Python and no GI dependencies
+        run: python3 -I reproducibility/check_d9_certificates.py reproducibility/results/d9_certificates_20261021/certificate.json --output /tmp/d9-checker-report.json
+      - name: Reject corrupted certificates
+        run: python3 reproducibility/test_d9_certificates.py -v
+      - name: Rebuild certificates without nauty or VF2
+        run: |
+          python3 reproducibility/build_d9_certificates.py --out /tmp/d9-certificates
+          cmp reproducibility/results/d9_certificates_20261021/certificate.json /tmp/d9-certificates/certificate.json
+          cmp reproducibility/results/d9_certificates_20261021/summary.json /tmp/d9-certificates/summary.json
+          cmp reproducibility/results/d9_certificates_20261021/representatives.csv /tmp/d9-certificates/representatives.csv
+          cmp reproducibility/results/d9_certificates_20261021/checker_report.json /tmp/d9-checker-report.json
   d9-nauty:
     runs-on: ubuntu-24.04
     timeout-minutes: 10

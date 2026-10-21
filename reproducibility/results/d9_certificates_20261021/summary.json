@@ -1,0 +1,27 @@
+{
+  "graphs": 594,
+  "classes": 12,
+  "class_sizes": [
+    54,
+    54,
+    54,
+    54,
+    27,
+    54,
+    54,
+    54,
+    54,
+    54,
+    27,
+    54
+  ],
+  "spectral_classes": 12,
+  "motif4_classes": 10,
+  "joint_spectrum_motif4_classes": 12,
+  "trace6_trace9_classes": 12,
+  "first_complete_trace_prefix_horizon": 9,
+  "nauty_membership_partition_agreement": true,
+  "vf2_rerun": false,
+  "historical_vf2_membership_equality": "NOT_ESTABLISHED_MISSING_ARCHIVE",
+  "scope": "Generating identity-free 3-subsets of D9 only; no spectral determination among arbitrary digraphs or other orders."
+}

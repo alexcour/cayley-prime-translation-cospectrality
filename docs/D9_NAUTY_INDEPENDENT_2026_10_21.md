@@ -1,5 +1,7 @@
 # D9 — independent nauty computation, 21 October 2026
 
+**Follow-up:** explicit certificates now verify every member map and all 66 representative separations without nauty/VF2. The 12 representatives have distinct spectra, and traces 6 and 9 already separate them. See `D9_EXPLICIT_CERTIFICATES_2026_10_21.md`. The historical VF2 membership reserve below remains open.
+
 **Result:** nauty independently finds **12 directed isomorphism classes** among the **594** generating identity-free three-element right-Cayley supports on D9 (order 18). Ten classes have 54 supports and two have 27. **No VF2 computation was rerun.** The complete nauty partition, input matrices, digraph6 files, original-label representatives, canonical labels, commands, logs, software identities and SHA-256 manifests are archived under `reproducibility/results/d9_nauty_20261021/`.
 
 ## Frozen source and search boundary

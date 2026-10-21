@@ -1,0 +1,24 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "build_argv": [
+    "reproducibility/build_d9_certificates.py",
+    "--out",
+    "reproducibility/results/d9_certificates_20261021"
+  ],
+  "cwd": "/workspace/scratch/1dfd358e280b/cayley",
+  "source_sha256": {
+    "reproducibility/build_d9_certificates.py": "8e9a5a10d240af901591a631849ee40febd8facfd4917ee812df180fefb4a9cc",
+    "reproducibility/check_d9_certificates.py": "f6797d05d6935272f1375976c0517078864d817022eee455d7b52742f0eb4731",
+    "reproducibility/verify_d9_nauty.py": "a6af4ac345e6f316149e60181968142916103b2264fa3973e836e34ce957c0d9",
+    "reproducibility/verify_spec_obs_09.py": "e8c1ca53872bf141241ea9ea2b9628184cdb66621704304b33fb340ae12e35aa",
+    "reproducibility/results/d9_nauty_20261021/nauty_partition.csv": "7d967ef46e8f623fd3bef95bc9b6a25fea203b5979f92fedb112c79dece54f3e"
+  },
+  "methods": {
+    "isomorphism_search": "none; enumerate 54 explicit automorphisms",
+    "trace_producer": "group convolution",
+    "characteristic_producer": "integer Newton identities",
+    "checker": "separate stdlib script; matrix traces and 19 Bareiss determinants per representative"
+  },
+  "trace6_trace9_choice": "exploratory post-hoc choice after inspecting D9; not preregistered or asserted minimal among arbitrary observables"
+}

@@ -1,0 +1,27 @@
+{
+  "commands": [
+    [
+      "python3",
+      "reproducibility/build_d9_certificates.py",
+      "--out",
+      "reproducibility/results/d9_certificates_20261021"
+    ],
+    [
+      "python3",
+      "-I",
+      "reproducibility/check_d9_certificates.py",
+      "reproducibility/results/d9_certificates_20261021/certificate.json",
+      "--output",
+      "reproducibility/results/d9_certificates_20261021/checker_report.json"
+    ],
+    [
+      "python3",
+      "reproducibility/test_d9_certificates.py",
+      "-v"
+    ]
+  ],
+  "all_exit_codes": 0,
+  "corruption_tests_passed": 9,
+  "workflow_yaml_parse": "PASS",
+  "historical_vf2_files_unchanged": true
+}
