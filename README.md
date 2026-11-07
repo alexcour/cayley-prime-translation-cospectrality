@@ -104,3 +104,7 @@ VERSION is 0.1.2-review. The proof files, scripts, examples and manuscript are u
 The delta restores the author-approved license policy, aligns the version, and adds
 review intake and a build check. GitHub review is allowed; stable release, Zenodo, HAL
 and arXiv remain deferred. No repository, tag, release or DOI is created by this package.
+
+## Consignes pour les agents
+
+Les interventions assistées suivent les [consignes du dépôt](AGENTS.md).
