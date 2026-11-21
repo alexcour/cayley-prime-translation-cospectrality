@@ -1,6 +1,6 @@
 # Publication status
 
-Status date: 2026-10-07
+Status date: 2026-10-11 (publication-governance addendum; mathematical claims unchanged)
 Version: 0.1.3-review
 Review channel: PUBLIC REVIEW / 0.1.x
 Stable scientific release: NO-GO
@@ -57,10 +57,13 @@ Independent human mathematical review remains OPEN.
 - GitHub: **public as PUBLIC REVIEW / 0.1.x** for external checking, with all status warnings retained.
 - Repository verification (2026-10-07): PR #1 merged at commit [`5e31912134fb6303639facedf4150d32255795bd`](https://github.com/alexcour/cayley-prime-translation-cospectrality/commit/5e31912134fb6303639facedf4150d32255795bd); [verify #4 (run 37585311793)](https://github.com/alexcour/cayley-prime-translation-cospectrality/actions/runs/37585311793) succeeded on that exact commit, with `exact-checks` and `manuscript-build` both passing.
 - Stable release (`v1.0.0`): BLOCKED until the stable-release gates are closed.
-- Zenodo: DO NOT CREATE a Cayley DOI in this review stage.
+- Zenodo: an **UNREVIEWED RESEARCH ARCHIVE / NOT PEER REVIEWED** in the `0.1.x` series MAY be prepared and deposited BEFORE external peer review, once the separate Gate Z in `docs/RELEASE_GATE.md` has passed for the precise frozen files. This reverses only the old blanket embargo on pre-review archiving; it does not create a DOI, claim priority, or authorize `v1.0.0`.
+- **Gate Z = HOLD** for a deposit: no exact archival package, final metadata, archive checksum or completed funding/competing-interest declarations are supplied by this governance PR. The repository rights/sensitivity findings and their limits are recorded in [the PR #9 documentary audit](docs/PR9_DOCUMENTARY_AUDIT_2026-10-11.md). A passing CI or PR merge does not close Gate Z.
 - HAL: DO NOT DEPOSIT in this review stage.
 - arXiv: DO NOT SUBMIT in this review stage.
 - ORCID: do not assert a Cayley archival work identifier before an eligible public identifier exists.
 - Google Scholar: do not assert indexing before it actually occurs.
 
 A public GitHub `0.1.x` review snapshot is a dissemination/review event, not a stable scientific publication claim.
+
+2026-10-11 maintenance note: the `2026-10-09` `main` CI failed the SHA-256 manifest check after README-only edits, although exact checks and manuscript build passed. The repair candidate must pass its own CI; historic green runs do not validate the current head. No new Zenodo DOI was assigned by this policy update.

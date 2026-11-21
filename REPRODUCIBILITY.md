@@ -25,6 +25,16 @@ Selected review tools and outputs are included:
 
 These current results close practical checking gaps but do not recover the missing historical originals. Their provenance is recorded under `reproducibility/provenance/`.
 
+From the repository root, the corresponding commands using the **current packaged paths** are:
+
+```bash
+python3 reproducibility/verify_lattice_independent.py --p 3 --bound 120 --output /tmp/cayley_p3_120_new.json
+python3 reproducibility/reproduce_available_sources.py --source reproducibility/check_cp_translation.py --mode mixed --output /tmp/cayley_mixed_new.json
+python3 reproducibility/reproduce_available_sources.py --source reproducibility/check_cp_translation.py --mode 416 --output /tmp/cayley_416_new.json
+```
+
+The historical `COMMANDES_REPRODUCTION.txt` and `FILE_IDENTITIES.json` describe the earlier source pack, including paths and items not bundled here. They are provenance records, not the current checkout manifest. `SHA256SUMS.txt` inventories the current repository files, excluding itself. The mixed/416 driver reuses the archived spectral encoder; replaying it is not an independent implementation or independent human validation. These additional runs are available for review and are not steps of the current `verify` workflow.
+
 ## Historical support bundled
 
 The package also includes a non-canonical `reproducibility/legacy_support/` area so that claims referenced by the public examples are not left without their historical support files:
