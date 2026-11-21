@@ -21,7 +21,11 @@ See `reproducibility/provenance/INVENTAIRE_ORIGINAUX.csv` and the JSON identity/
 | 0.1.3-review | The [6 October preparation record](docs/CHANGES_0.1.3-review.md) documents the transition from the Drive ZIP, with licensing, review intake and CI changes. Subsequent [PDF synchronization](docs/PDF_SYNC_20261020.md) records the LaTeX and PDF hashes for the October revision. |
 | 0.1.4-review | Descends from Git commit [8755f12](https://github.com/alexcour/cayley-prime-translation-cospectrality/commit/8755f12c979288592d53bb3b9f1a51cf5f4f26db). The version identifies the repository snapshot. The README, antecedence audit and manuscript discussion were updated for review and the PDF was rebuilt from the revised LaTeX source. |
 
-The 0.1.2-review source ZIP was recorded in the handoff pack. The October staging and change records establish the documented lineage. A fresh byte-level comparison with that source ZIP remains open. The current checkout's `SHA256SUMS.txt` records the current files. The [historical inventory](reproducibility/provenance/INVENTAIRE_ORIGINAUX.csv) records originals still missing.
+### Historical ZIP verification
+
+The retained copy of `cayley-prime-translation-cospectrality-public-review-0.1.2.zip` is 654,699 bytes with SHA-256 `9214e6f93df8eb81e1114b3ca87c54a5d61eae91d3fe4eacf8fde485bacfb468`. Its internal `VERSION` is `0.1.2-review`. On 21 November 2026, the ZIP passed its CRC check and all 49 entries in its internal SHA-256 manifest matched. After stripping the outer staging directory, all 50 files, including the manifest, matched the Git tree of [the historical import](https://github.com/alexcour/cayley-prime-translation-cospectrality/commit/caa541e9ad110713e4a0821c4f006b396fadc523) byte for byte. That import is an ancestor of the review candidate.
+
+Against this source, the 0.1.4-review tree retains 34 files byte for byte, updates 16 and adds 10. The original source witnesses, public theorem witnesses, reproduction scripts, archived results and historical certificate ZIPs are among the identical files. The current checkout’s `SHA256SUMS.txt` covers the current paths. The [historical inventory](reproducibility/provenance/INVENTAIRE_ORIGINAUX.csv) still identifies unrecovered upstream originals.
 
 ## Witnesses and reproductions
 
