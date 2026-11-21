@@ -1,6 +1,6 @@
 # Prior-art status
 
-Status date: 2026-10-07. **N = NON AUDITEE** for the general classification and the complete cyclic family. This update verifies particular bibliographic facts and one explicit overlap; it does not certify an exhaustive literature audit, independent mathematical review, or novelty.
+Status date: 2026-11-21. **N = NON AUDITEE** for the general classification and the complete cyclic family. This audit records explicit overlaps and the scope of the comparisons completed so far.
 
 ## Repository statements being compared
 
@@ -14,17 +14,33 @@ The comparison concerns the statements in `manuscript/structured_cayley.tex` and
 
 A direct same-group circulant comparison requires `H x C_p` to be cyclic, hence `H` cyclic and `p` not dividing `|H|`. In a positive homomorphism case, surjectivity of `h` forces `p` to divide `|H|`; the product has noncyclic `p`-torsion. A theorem formulated on a cyclic group therefore does not directly cover that group presentation. This observation alone does not rule out a different cyclic representation of a digraph.
 
+## Comparison at a glance
+
+| Source | Relation to the prescribed translation pair | Evidence and scope |
+| --- | --- | --- |
+| Brown, Theorem 3.1 | Recovers the cospectral nonisomorphic pairs at $p=3$, $k=2^r$, $r\ge 2$, $\mu=1+k/2$. | Primary text and explicit CRT correspondence below. |
+| Mönius (2020), Theorem 10 | Recovers adjacency cospectrality at $p=3$, $4\mid k$, $3\nmid k$, $\mu=1+k/2$. | Primary text and explicit CRT correspondence below. The comparison concerns cospectrality of the pair. |
+| Huang–Chang (2001), Theorems 1–3 | For the cyclic involution family, only $k=2^a$ meets the order hypotheses. Every prescribed support at those orders fails the bound on its representatives in the standard cyclic group, including after unit multiplication. | Deduction from Liu–Zhou’s published restatement. Full primary text remains to be checked. |
+| Meng (1998), pp. 51–53 | Group and support comparison remains open. | Published secondary citation. Primary pages still to be obtained. |
+
+The positive $h$ cases of 10A6 and 10C3 have noncyclic $H\times C_p$ in their given group presentation. The cyclic constructions above address particular pairs in the ternary $\beta$ regime. Priority for the full classification and for 10B1’s injectivity across different $\mu$ remains unaudited.
+
 ## Established overlap / priority retained from the earlier audit
 
 - The 12-vertex circulant example is antecedent: equivalent pairs occur in Julia Brown's work and in Katja Mönius's thesis.
 - Brown also contains an infinite subfamily corresponding to the power-of-two specialization `k=2^r`, `mu=1+2^(r-1)`.
 
-These established entries are retained from `proofs/original_witnesses/PRIOR_ART_SOURCE_10D1_original.txt`; they are not newly inferred from an abstract. The 2020 article comparison below is separate from the 2021 thesis comparison.
+The earlier audit is preserved in [the original 10D1 transcription](proofs/original_witnesses/PRIOR_ART_SOURCE_10D1_original.txt). The Mönius 2021 thesis comparison is separate from the 2020 article comparison.
+
+### Brown: explicit primary-source correspondence
+
+In [Brown’s Theorem 3.1 and Example 3.1](https://arxiv.org/pdf/0904.1968), specialize her odd prime to $3$. Write $k=2^r$ with $r\ge2$, $n=3k$, and $\mu=1+k/2$. Brown’s supports are $A_\pm=\{1,1\pm k,1\pm k+n/2\}$ modulo $n$. In the CRT coordinates $(x\bmod k,x\bmod 3)$, these elements have first components $1,1,\mu$. Their second components are $1,1\pm k,1\pm k$ modulo $3$. The sign with $1\pm k\equiv0\pmod3$ gives $T$ directly. The other sign gives $T^+$ after applying the unit multiplier with CRT coordinates $(1,-1)$. Brown’s result therefore applies to both cospectrality and nonisomorphism on this subfamily.
 
 ## Verified bibliographic records and access evidence
 
-| Work | Verified record | Evidence inspected on 2026-10-07 |
+| Work | Verified record | Evidence inspected |
 | --- | --- | --- |
+| Brown 2009 | Julia Brown, *Isomorphic and Nonisomorphic, Isospectral Circulant Graphs*, arXiv:0904.1968. | [Primary text](https://arxiv.org/pdf/0904.1968), Theorem 3.1 and Example 3.1. |
 | Meng 1998 | J. Meng, *Non-isomorphic cospectral Cayley digraphs*, **Graph Theory Notes of New York 35** (1998), 51-53. | Exact citation in Liu-Zhou's published bibliography, reference **[302]**, p. **158** ([journal PDF](https://www.combinatorics.org/ojs/index.php/eljc/article/download/v29i2p9/pdf)). This is secondary bibliographic corroboration; Meng's primary pages were not obtained. No DOI has been verified. |
 | Huang-Chang 2001 | Qiongxiang Huang and An Chang, *Circulant digraphs determined by their spectra*, **Discrete Mathematics 240** (2001), 261-270. DOI [10.1016/S0012-365X(01)00198-4](https://doi.org/10.1016/S0012-365X(01)00198-4). | [Publisher record and abstract](https://www.sciencedirect.com/science/article/pii/S0012365X01001984), plus Liu-Zhou 2022, Theorem 93, which explicitly restates Huang-Chang Theorems 1--3 and their support/order hypotheses. A full primary PDF indexed at CORE remained inaccessible, so the restatement is authoritative secondary evidence rather than a substitute for primary reading. |
 | Mönius 2020 | Katja Mönius, *Constructions of isospectral circulant graphs*, **Elemente der Mathematik 75**, no. 2 (2020), 45-57. DOI [10.4171/EM/404](https://doi.org/10.4171/EM/404). | [Publisher record](https://ems.press/journals/em/articles/16864) and [complete primary article in ETH's E-Periodica archive](https://www.e-periodica.ch/cntmng?bot=1&pid=edm-001%3A2020%3A75%3A%3A224), including visual inspection of Theorem 10, p. 54. |
@@ -37,18 +53,13 @@ The separately indexed Meng-Xu paper, *On the isomorphism problem of Cayley grap
 
 Meng's group hypotheses, support construction, valency, spectral convention and conclusions remain unverified here. Consequently, no overlap or non-overlap with 10A6, 10C3, the cyclic family, or `C_m x C_6` is asserted. **N = NON AUDITEE** for each such comparison.
 
-### Huang-Chang: theorem-level order boundary from a published restatement
+### Huang–Chang: support-level comparison from the published restatement
 
-The primary article itself was not obtained in full, but Liu-Zhou 2022, Theorem 93, explicitly restates Huang-Chang Theorems 1--3. In that restatement, `Cay(Z_n,S)` is Cay-DS under three cases: (a) prime-power order with a coset exclusion; (b) `n=p^a q^b` for distinct odd primes, with a support-size/location bound; and (c) `n=2^a q^b` for odd prime `q), with `S` generating and the same bound. This is stronger evidence than the abstract alone, while still remaining secondary to the primary paper.
+[Liu–Zhou 2022, Theorem 93](https://www.combinatorics.org/ojs/index.php/eljc/article/download/v29i2p9/pdf#page=43), restates the three Huang–Chang cases. For $n=3k$, $k$ even and $3\nmid k$, only case (c) meets the order hypotheses, and only when $k=2^a$. In that case the restatement requires a generating support with largest standard representative at most $\varphi(3k)=k$.
 
-Consequences for the repository family:
+Each of $T$ and $T^+$ generates the product here: the difference of the two entries with first coordinate $1$ gives $(0,1)$, and the support then generates $(1,0)$. Under CRT those two entries give distinct residues modulo $3k$ with the same image modulo $k$. They are nonzero, and two distinct positive representatives in $[1,k]$ cannot have the same image modulo $k$. This obstruction persists under multiplication by every unit modulo $3k$, which preserves distinctness, nonzeroness, and congruence modulo $k$.
 
-- Positive `h` cases are not direct same-group circulant instances, by the noncyclicity observation above.
-- For the cyclic specialization `n=3k`, with even `k` and `3` not dividing `k`, the Huang-Chang order forms intersect the family only when `k=2^a`: then `n=2^a*3`, falling under case (c). If `k` has any odd prime divisor other than `3`, then `n` has at least three distinct prime divisors and lies outside all three stated order forms.
-- Therefore Huang-Chang is **not a global antecedence blocker** for the cyclic family outside the power-of-two intersection. On the intersection `k=2^a`, its Cay-DS conclusion is relevant and must be reconciled support-by-support with the already known Brown/Mönius overlaps; the order coincidence alone does not identify the same support pair.
-- The restated theorem does not directly address the noncyclic positive `h` regime of 10A6.
-
-Primary full-text reading remains desirable to verify the exact original wording/proof and to perform the support-level comparison on `k=2^a`. The general `h`/`beta` classifications and 10B1 remain **N = NON AUDITEE**.
+This checks the displayed support hypothesis for both members of the prescribed pair and all changes of cyclic generator. The full [Huang–Chang primary text](https://doi.org/10.1016/S0012-365X(01)00198-4) is still needed to verify the original wording and any additional results. The comparison leaves arbitrary alternative Cayley representations unexamined.
 
 ### Mönius: explicit primary-source overlap
 
@@ -88,7 +99,7 @@ The correspondence is an algebraic deduction in this update, not a quotation or 
 ## Remaining primary-source gate
 
 1. Obtain Meng's actual pp. 51-53 and compare its constructions and conclusions with each repository claim; the bibliographic corroboration is not this step.
-2. Obtain Huang-Chang's primary full text to verify the restated theorem wording/proofs and complete the support-level comparison on the only relevant cyclic intersection `k=2^a`. The published Liu-Zhou restatement already shows that Huang-Chang is not a global blocker outside that intersection.
+2. Obtain Huang-Chang’s primary full text to verify the restatement and check for additional results on the cyclic intersection `k=2^a`. The representative bound from the published restatement already excludes the prescribed CRT supports on that intersection.
 3. Compare the remaining cyclic involutions with all relevant article constructions, and check equivalent group/support presentations before asserting exclusion.
 4. Preserve the distinction between mathematical proof status, bibliographic priority and independent review.
 
