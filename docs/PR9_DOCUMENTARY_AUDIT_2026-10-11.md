@@ -54,3 +54,7 @@ This is sufficient documentary evidence for the bounded repository correction. T
 | Stable scientific v1.0.0, HAL, arXiv | NO-GO under the existing stable-release and platform restrictions. |
 
 No upload, DOI reservation/creation, GitHub release, tag or automatic archival integration is performed by this correction. Merge is a repository maintenance decision; it does not certify the general proofs, close the priority audit or approve a future Zenodo deposit.
+
+## Integration on 21 November 2026
+
+The October findings below refer to the revisions named in this audit. The integrated manuscript PDF comes from [PR #13](https://github.com/alexcour/cayley-prime-translation-cospectrality/pull/13), which synchronized the PDF with its LaTeX source and authorship. Its SHA-256 is 0d09a14297b32f5c51da3ed971b473d264a01800977eedc0c18d1f4bfb5ed8a6. The current manifest covers the combined checkout.
