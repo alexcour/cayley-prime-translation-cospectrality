@@ -1,0 +1,136 @@
+{
+  "experiment": "SPEC-OBS-08",
+  "scope": "Same 1068 right Cayley loopless strongly-connected triples, D3-D8 Q8 A4",
+  "columns": [
+    "order",
+    "graphs",
+    "spectral_classes",
+    "two_point_classes",
+    "three_motif_classes",
+    "four_motif_classes",
+    "exact_iso_classes",
+    "I_n_nonisomorphic_unresolved",
+    "I_n_plus_3motif_nonisomorphic_unresolved",
+    "four_motif_nonisomorphic_unresolved"
+  ],
+  "rows": [
+    [
+      6,
+      10,
+      3,
+      3,
+      3,
+      3,
+      3,
+      0,
+      0,
+      0
+    ],
+    [
+      8,
+      64,
+      6,
+      7,
+      7,
+      7,
+      7,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      80,
+      5,
+      5,
+      5,
+      5,
+      5,
+      0,
+      0,
+      0
+    ],
+    [
+      12,
+      296,
+      18,
+      20,
+      20,
+      22,
+      22,
+      288,
+      144,
+      0
+    ],
+    [
+      14,
+      266,
+      8,
+      8,
+      8,
+      8,
+      8,
+      0,
+      0,
+      0
+    ],
+    [
+      16,
+      352,
+      13,
+      14,
+      13,
+      14,
+      14,
+      0,
+      0,
+      0
+    ]
+  ],
+  "more": {
+    "order12_three_motif_unresolved": 288,
+    "order16_three_motif_unresolved": 1024
+  },
+  "witnesses": {
+    "D6": {
+      "supports": [
+        [
+          1,
+          3,
+          6
+        ],
+        [
+          1,
+          6,
+          8
+        ]
+      ],
+      "two_point_equal": true,
+      "three_motif_equal": true,
+      "four_motif_equal": false,
+      "edgeless_four_vertex_subsets": [
+        30,
+        33
+      ]
+    },
+    "A4": {
+      "supports": [
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          1,
+          3,
+          6
+        ]
+      ],
+      "two_point_equal": true,
+      "three_motif_equal": false,
+      "four_motif_equal": false
+    }
+  },
+  "validation": "Integer canonical induced directed motifs and NetworkX VF2; independent relabeling invariant checks; local exact full output richer than this frozen summary",
+  "status": "finite exact E, novelty N NON AUDITEE, human review outstanding"
+}

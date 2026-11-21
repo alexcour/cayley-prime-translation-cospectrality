@@ -1,0 +1,70 @@
+{
+  "protocol": "SPEC-OBS-02",
+  "scope": "all three-element subsets of Z/nZ (including zero)",
+  "method": "exact integer cyclic convolution and Newton characteristic polynomial; reduced ordered-pair walk multiset horizons 1..n",
+  "results": [
+    {
+      "n": 8,
+      "supports": 56,
+      "spectra": 19,
+      "cospectral_pairs": 67,
+      "separated": 0
+    },
+    {
+      "n": 10,
+      "supports": 120,
+      "spectra": 32,
+      "cospectral_pairs": 172,
+      "separated": 0
+    },
+    {
+      "n": 12,
+      "supports": 220,
+      "spectra": 71,
+      "cospectral_pairs": 287,
+      "separated": 16,
+      "first_horizon": 3
+    },
+    {
+      "n": 14,
+      "supports": 364,
+      "spectra": 64,
+      "cospectral_pairs": 884,
+      "separated": 0
+    },
+    {
+      "n": 15,
+      "supports": 455,
+      "spectra": 65,
+      "cospectral_pairs": 1479,
+      "separated": 0
+    },
+    {
+      "n": 16,
+      "supports": 560,
+      "spectra": 85,
+      "cospectral_pairs": 1783,
+      "separated": 0
+    },
+    {
+      "n": 18,
+      "supports": 816,
+      "spectra": 147,
+      "cospectral_pairs": 2008,
+      "separated": 36,
+      "first_horizon": 4
+    },
+    {
+      "n": 20,
+      "supports": 1140,
+      "spectra": 172,
+      "cospectral_pairs": 3569,
+      "separated": 0
+    }
+  ],
+  "status": {
+    "E": "exact finite verification and elementary invariant proof",
+    "N": "NON AUDITEE",
+    "Q": "local checks completed; independent review pending"
+  }
+}
